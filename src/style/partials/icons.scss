@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?k0nm0g');
+    src:    url('../fonts/icomoon.eot?k0nm0g#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?k0nm0g') format('truetype'),
+        url('../fonts/icomoon.woff?k0nm0g') format('woff'),
+        url('../fonts/icomoon.svg?k0nm0g#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-airplane:before {
+    content: "\e900";
+}
+.icon-arrow:before {
+    content: "\e901";
+}
+.icon-board:before {
+    content: "\e902";
+}
+.icon-calculate:before {
+    content: "\e903";
+}
+.icon-dollar:before {
+    content: "\e904";
+}
+.icon-location:before {
+    content: "\e905";
+}
+.icon-mail:before {
+    content: "\e906";
+}
+.icon-mail2:before {
+    content: "\e907";
+}
+.icon-money:before {
+    content: "\e908";
+}
+.icon-note:before {
+    content: "\e909";
+}
+.icon-note2:before {
+    content: "\e90a";
+}
+.icon-pencil:before {
+    content: "\e90b";
+}
+.icon-phone:before {
+    content: "\e90c";
+}
+.icon-rocket:before {
+    content: "\e90d";
+}
+.icon-settings:before {
+    content: "\e90e";
+}
+

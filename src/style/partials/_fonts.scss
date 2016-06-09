@@ -1,0 +1,7 @@
+@import "bourbon/bourbon";
+
+@include font-face("Museo-100", "../fonts/MuseoSansCyrl", normal, $file-formats: woff);
+@include font-face("Museo-300", "../fonts/MuseoSansCyrl_0", normal, $file-formats: woff);
+@include font-face("Museo-500", "../fonts/MuseoSansCyrl_1", normal, $file-formats: woff);
+@include font-face("Museo-700", "../fonts/MuseoSansCyrl_2", normal, $file-formats: woff);
+@include font-face("Museo-900", "../fonts/MuseoSansCyrl_3", normal, $file-formats: woff);
