@@ -5,3 +5,6 @@
 @include font-face("Museo-500", "../fonts/MuseoSansCyrl_1", normal, $file-formats: woff);
 @include font-face("Museo-700", "../fonts/MuseoSansCyrl_2", normal, $file-formats: woff);
 @include font-face("Museo-900", "../fonts/MuseoSansCyrl_3", normal, $file-formats: woff);
+
+@include font-face("Roboto-Thin", "../fonts/Roboto-Thin", normal, $file-formats: woff);
+@include font-face("Roboto-LightItalic", "../fonts/Roboto-LightItalic", normal, $file-formats: woff);

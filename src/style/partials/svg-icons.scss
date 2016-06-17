@@ -1,0 +1,133 @@
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+
+.icon-hand {
+	width: 1.0400390625em;
+}
+#icon-hand .path1 {
+	fill: #ffccbc;
+}
+#icon-hand .path2, #icon-hand .path3, #icon-hand .path4, #icon-hand .path5, #icon-hand .path6 {
+	fill: #ffab91;
+}
+#icon-hand .path7 {
+	fill: #468bd1;
+}
+#icon-hand .path8 {
+	fill: #54a5e8;
+}
+#icon-hand .path9 {
+	fill: #fff;
+}
+
+.icon-heart {
+	width: 0.962890625em;
+}
+#icon-heart .path1 {
+	fill: #e2574c;
+}
+#icon-heart .path2 {
+	fill: #fff;
+}
+#icon-heart .path3, #icon-heart .path4 {
+	fill: #fcf4df;
+}
+#icon-heart .path5 {
+	fill: #cb4e44;
+}
+#icon-heart .path6 {
+	fill: #f9dddb;
+}
+
+.icon-phone {
+	width: 0.51171875em;
+}
+#icon-phone .path1, #icon-phone .path2, #icon-phone .path3, #icon-phone .path4 {
+	fill: #36393a;
+}
+#icon-phone .path5, #icon-phone .path6 {
+	fill: #292929;
+}
+#icon-phone .path7, #icon-phone .path11 {
+	fill: #202223;
+}
+#icon-phone .path8, #icon-phone .path10, #icon-phone .path12 {
+	fill: #5d5d5d;
+}
+#icon-phone .path9 {
+	fill: #feffff;
+}
+#icon-phone .path13, #icon-phone .path17, #icon-phone .path19, #icon-phone .path20 {
+	fill: #63b4ea;
+}
+#icon-phone .path14 {
+	fill: #dfe5e5;
+}
+#icon-phone .path15, #icon-phone .path16, #icon-phone .path18 {
+	fill: #54a5e8;
+}
+
+#icon-clock .path1 {
+	fill: #feffff;
+}
+#icon-clock .path2, #icon-clock .path7, #icon-clock .path8, #icon-clock .path9, #icon-clock .path10, #icon-clock .path11, #icon-clock .path12, #icon-clock .path13, #icon-clock .path14 {
+	fill: #202223;
+}
+#icon-clock .path3, #icon-clock .path4, #icon-clock .path5, #icon-clock .path6 {
+	fill: #ef6250;
+}
+#icon-clock .path15 {
+	fill: #54a5e8;
+}
+
+.icon-pencil {
+	width: 0.9990234375em;
+}
+#icon-pencil .path1 {
+	fill: #468bd1;
+}
+#icon-pencil .path2 {
+	fill: #54a5e8;
+}
+#icon-pencil .path3, #icon-pencil .path4, #icon-pencil .path5, #icon-pencil .path6, #icon-pencil .path7, #icon-pencil .path8, #icon-pencil .path9, #icon-pencil .path10, #icon-pencil .path11, #icon-pencil .path12, #icon-pencil .path13, #icon-pencil .path14, #icon-pencil .path15, #icon-pencil .path16, #icon-pencil .path17 {
+	fill: #bbe1f9;
+}
+#icon-pencil .path18 {
+	fill: #343516;
+}
+#icon-pencil .path19 {
+	fill: #fbface;
+}
+#icon-pencil .path20 {
+	fill: #ffcc32;
+}
+#icon-pencil .path21 {
+	fill: #f26722;
+}
+#icon-pencil .path22 {
+	fill: #f8981d;
+}
+#icon-pencil .path23 {
+	fill: #e36fac;
+}
+#icon-pencil .path24 {
+	fill: #d2cf82;
+}
+#icon-pencil .path25 {
+	fill: #e5e08e;
+}
+#icon-pencil .path26 {
+	fill: #f9f39b;
+}
