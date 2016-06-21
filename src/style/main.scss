@@ -243,7 +243,7 @@ a{
 }
 
 .who-work{
-	padding: 140px 0px;
+	padding: 115px 0px;
 	&__title{
 		padding: 20px 0px 60px 0; 
 		background-color: #fff;
@@ -260,6 +260,221 @@ a{
 		justify-content: space-between;
 		display: flex;
 		flex-wrap: wrap;
+	}
+	&__item{
+		width: 33.3334%;
+		padding-left: 154px;
+		margin-bottom: 60px;
+		position: relative;
+		.logo{
+			margin-bottom: 16px;
+			padding-top: 58px;
+			img{
+				width: 300px;
+				height: auto;
+			}
+		}
+		a{
+			font-size: 17px;
+			text-transform: uppercase;
+			color: #fff;
+			background-color: #e74f4c;
+			border-radius: 10px;
+			padding: 20px 55px;
+			display: inline-block;
+			font-family: "Museo-900";
+			letter-spacing: 1px;
+			position: relative;
+			padding-left: 89px;
+			border-bottom: 4px solid #f48381;
+			top: 0;
+			&:before{
+				width: 22px;
+				height: 23px;
+				content: "";
+				background-image: url("/img/arrow2.png");
+				position: absolute;
+				left: 52px;
+				top: 50%;
+				margin-top: -11px;
+				z-index: 99;
+				transition: all .2s ease;
+			}
+			&:hover{
+				top: 4px;
+				border-bottom-color: transparent;
+			}
+		}
+		&--big{
+			width: 66.66666%;
+			padding-left: 0;
+		}
+		&:before{
+			background-image: url("/img/some-icons.png");
+			position: absolute;
+			content: "";
+		}
+		&.logo{
+			text-align: center;
+			padding: 10px 20px;
+		}
+		&.marketers:before{
+			width: 154px;
+			height: 173px;
+			left: -10px;
+			top: 39px;
+		}
+		&.seo:before{
+			width: 151px;
+			height: 190px;
+			background-position: -4px -174px;
+			left: -5px;
+			top: 39px;
+
+		}
+
+		&.account:before{
+			width: 143px;
+			height: 156px;
+			left: 0px;
+			top: 39px;
+			background-position: -4px -366px;
+		}
+
+		&.project:before{
+			width: 151px;
+			height: 171px;
+			left: 0px;
+			top: 39px;
+			background-position: -45px -508px;
+		}
+		&.design:before{
+			width: 151px;
+			height: 171px;
+			left: 0px;
+			top: 39px;
+			background-position: -45px -508px;
+		}
+		&.seo:before{
+			width: 151px;
+			height: 190px;
+		}
+		&.web{
+			position: relative;
+			&:after{
+				content: "";
+				width: 83px;
+				height: 30px;
+				position: absolute;
+				left: 77%;
+				top: -20px;
+				background-image: url("/img/punktir.png");
+			}
+		}
+	}
+	&__item-descr{
+		h5{
+			font-family: "Museo-900";
+			text-transform: uppercase;
+			font-size: 14px;
+			color: #383838;
+			margin: 0;
+			margin-bottom: 12px;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+	&__item-img{
+		margin-bottom: 20px;
+		span{
+			width: 87px;
+			height: 87px;
+			display: block;
+			background-image: url("/img/guys.png");
+			background-repeat: no-repeat;
+			&.sasha{
+				background-position: center 0;
+			}
+			&.stas{
+				background-position: center -87px;
+			}
+			&.kostya{
+				background-position: center -174px;
+			}
+			&.lera{
+				background-position: center -261px;
+			}
+			&.julia{
+				background-position: center -348px;
+			}
+			&.evgen{
+				background-position: center -435px;
+			}
+			&.slava{
+				background-position: center -522px;
+			}
+			&.karina{
+				background-position: center -609px;
+			}
+			&.alena{
+				background-position: center -696px;
+			}
+			&.sergey1{
+				background-position: center -783px;
+			}
+			&.sergey2{
+				background-position: center -870px;
+			}
+			&.vadim{
+				background-position: center -957px;
+			}
+			&.sergey3{
+				background-position: center -1044px;
+			}
+			&.ira{
+				background-position: center -1131px;
+			}
+			&.anya{
+				background-position: center -1218px;
+			}
+			&.igor{
+				background-position: center -1305px;
+			}
+			&.tanya{
+				background-position: center -1392px;
+			}
+		}
+	}
+	.counter{
+		text-align: center;
+		font-size: 48px;
+		color: #e95b49;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: "Museo-900";
+		padding-left: 132px;
+		position: relative;
+		&:before{
+			content: "";
+			width: 140px;
+			height: 101px;
+			position: relative;
+			left: 8px;
+			top: 50%;
+			margin-top: -25px;
+			background-image: url("/img/some-icons.png");
+			background-repeat: no-repeat;
+			background-position: left -981px;
+		}
+		b{
+			margin-right: 17px;
+		}
+		span{
+			color: #383838;
+			font-size: 17px;
+		}
 	}
 }
 

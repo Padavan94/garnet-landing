@@ -42,25 +42,58 @@ function forSVG() {
     });
 }
 
+var bool = true;
+function setCounter(){
+  
+  if(bool){
+    $('.counter b').each(function () {
+      $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+
+            }
+        }, function(done){
+          console.log("done");
+        });
+    });
+    bool = false;
+  } 
+}
 
 $(document).ready(function() {
+
+
+
+
+
+
 
 
 // full page animation
 
 
-var howWeWorkOffset = $(".how-we-work").offset().top;
+
 
 $(window).scroll(function(event) {
+  var howWeWorkOffset = $(".how-we-work").offset().top;
+var whoWork = $(".who-work").offset().top + 200;
   var sepor = $(document).scrollTop();
   console.log(sepor);
-  if(sepor>4900) {
+  if(sepor>howWeWorkOffset) {
     $("section.how-we-work").addClass("animate");
   }
-  if(sepor>7500) {
+  if(sepor>whoWork) {
     $(".our-garanties__icons").addClass("animate");
   }
+  if(sepor > whoWork) {
+    setCounter();
+  }
 });
+
 
 
 
@@ -83,7 +116,28 @@ var mySwiper = new Swiper('.swiper-container', {
     pagination: '.swiper-pagination',
     paginationClickable: true
 
-});   
+});
+
+var owl2items = $(".owl-init");
+var owl3items = $(".owl-init2");
+
+
+owl2items.owlCarousel({
+        loop:false,
+        margin:0,
+        nav:false,
+        items:2,
+        autoplay: true,
+    });
+
+owl3items.owlCarousel({
+        loop:false,
+        margin:0,
+        nav:false,
+        items:8,
+        autoplay: true,
+    });
+
 
 $('.vide-about-us__play').magnificPopup({
   type:'iframe',
