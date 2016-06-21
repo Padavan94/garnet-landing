@@ -50,14 +50,15 @@ $(document).ready(function() {
 
 
 var howWeWorkOffset = $(".how-we-work").offset().top;
-console.log("offset ="+howWeWorkOffset);
-console.log(howWeWorkOffset);
+
 $(window).scroll(function(event) {
-  var sepor = $(window).scrollTop()+($(window).innerHeight()-$(window).innerHeight()/2);
+  var sepor = $(document).scrollTop();
   console.log(sepor);
-  //anim peples
-  if(sepor>howWeWorkOffset) {
-    $(".how-we-work").addClass("animate");
+  if(sepor>4900) {
+    $("section.how-we-work").addClass("animate");
+  }
+  if(sepor>7500) {
+    $(".our-garanties__icons").addClass("animate");
   }
 });
 
@@ -115,7 +116,6 @@ $(".calculator__slider__slide2__content__submit-wrap").click(function() {
 $(".calculator__slider__slide1__content__chbxs__chbx-wrap__rad-outter input[type='radio']").click(function() {
 if($(this).is(":checked"))
 {
-       console.log("zalupa worked");
        $(".calculator__slider__slide1__content__submit-wrap").addClass("active");
 }
 
@@ -124,7 +124,6 @@ if($(this).is(":checked"))
 $(".calculator__slider__slide2__content__chbxs__chbx-wrap__rad-outter input[type='radio']").click(function() {
 if($(this).is(":checked"))
 {
-       console.log("zalupa worked");
        $(".calculator__slider__slide2__content__submit-wrap").addClass("active");
 }
 

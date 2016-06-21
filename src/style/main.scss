@@ -41,7 +41,7 @@ a{
 	background-color: #383736;
 	padding: 19px 0px;
 	color: #fff;
-	font-family: "Museo--300";
+	font-family: "Museo-300";
 	letter-spacing: 1px;
 	position: absolute;
 	left:0;
@@ -65,18 +65,18 @@ a{
 		align-items: center;
 		text-align: right;
 		p{
-			font-family: "Museo--300";
+			font-family: "Museo-300";
 			font-size: 15px;
 			margin-bottom: 0;
 			span{
-				font-family: "Museo--700";
+				font-family: "Museo-700";
 			}
 		}
 		a{
 			background-color: #fff;
 			padding: 17px 28px;
 			border-radius: 10px;
-			font-family: "Museo--900";
+			font-family: "Museo-900";
 			text-transform: uppercase;
 			font-size: 16px;
 			border-radius: 10px;
@@ -148,7 +148,7 @@ a{
 		}
 	}
 	&__info{
-		font-family: "Museo--300";
+		font-family: "Museo-300";
 		width: 260px;
 		span{
 			color: #808080;
@@ -178,6 +178,89 @@ a{
 	background-image: url("/img/main.jpg");
 	background-position: center top;
 	background-size: cover;
+	text-align: center;
+	padding-top: 187px;
+	&__buttons{
+		margin-top: 52px;
+	}
+	&__title{
+		position: relative;
+		z-index: 2;
+		h2{
+			font-size: 49px;
+			background-color: #e74f4c;
+			display: inline-block;
+			padding: 15px 30px;
+			font-family: "Museo-900";
+			color: #fff;
+			margin: 0;
+			z-index: 5;
+			opacity: .99;
+			position: relative;
+			&:nth-child(2){
+				background-color: #ef5b58;
+				position: relative;
+				z-index: 5;
+				opacity: .99;
+				
+			}
+		}
+
+	}
+	&__icons{
+		display: flex;
+		justify-content: space-between;
+		width: 615px;
+		margin: 0px auto;
+		margin-top: 28px;
+	}
+	&__icon{
+		padding-top: 150px;
+		position: relative;
+		width: 191px;
+		&:before{
+			content: "";
+			width: 126px;
+			height: 127px;
+			background-image: url("/img/icons-banner.png");
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -63px;
+		}
+		&.ic1:before{
+			height: 126px;
+			background-position: center top;
+		}
+		&.ic2:before{
+			background-position: center -126px;
+		}
+		&.ic3:before{
+			background-position: center -253px;
+		}
+	}
+}
+
+.who-work{
+	padding: 140px 0px;
+	&__title{
+		padding: 20px 0px 60px 0; 
+		background-color: #fff;
+		text-align: center;
+		h2{
+			margin: 0;
+			font-size: 48px;
+			color: #5d5d5d;
+			font-family: "Museo-900";
+
+		}
+	}
+	&__container{
+		justify-content: space-between;
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 .calculator
@@ -373,6 +456,12 @@ a{
 						
 							text-align: center;
 							position: relative;
+						input{
+							position: absolute;
+							left: 0;
+							top: 0;
+							opacity: 0;
+						}
 						label
 						{	color: #fff;	
 							cursor: pointer;
@@ -1227,6 +1316,11 @@ a{
 		text-align: center;
 		width: 274px;
 		position: relative;
+		transition: top .3s ease;
+		top: 0;
+		&:hover{
+			top: -5px;
+		}
 		&:before{
 			content: "";
 			width: 79px;
@@ -1387,8 +1481,8 @@ a{
 		padding: 17px 10px;
 		font-family: "Museo-900";
 		border-radius: 4px;
-		&:hover{
-			color: #fff;
+		&:hover,&:focus,&:active{
+			color: #000;
 		}
 		span{
 			margin-right: 6px;
@@ -1493,7 +1587,7 @@ a{
 	background-repeat: no-repeat;
 	position: relative;
 	z-index: 10;
-	    box-shadow: 0px 36px 49px rgba(0,0,0,.3);
+	box-shadow: 0px 36px 49px rgba(0,0,0,.3);
 	padding: 148px 260px;
 	&__title{
 		margin-bottom: 90px;
@@ -1527,6 +1621,10 @@ a{
 			display: block;
 			margin-top: 50px;
 			position: relative;
+			top: 10px;
+			opacity: 0;
+			animation: getTop 1s;
+			animation-fill-mode: forwards;
 			&:before{
 				content: "";
 				width: 92px;
@@ -1548,10 +1646,6 @@ a{
 			transform: scale(1);
 			top: 0;
 			position: relative;
-			&:hover{
-				top: -100px;
-				transform: scale(1.7);
-			}
 		}
 	}
 	&__titles{
@@ -1886,6 +1980,8 @@ a{
 	}
 }
 
+//animation 1
+
 .anim{
 	opacity: 0;
 	transition: all 1s ease;
@@ -1912,9 +2008,22 @@ a{
 #anim4{
 	transform: translate(-141px, 122px);
 }
+#anim2{
+	transform: translate(-141px, 122px);
+}
+#anim6{
+	transform: translate(82px,-114px);
+}
+#anim5{
+	transform: translate(-141px, 122px);
+}
+#anim7{
+	transform: translate(82px,-114px);
+}
+
 
 .animate svg{
-	#anim1,#anim3,#anim4{
+	#anim1,#anim3,#anim4,#anim2,#anim6,#anim5,#anim7{
 		animation: getDefault 1s;
 		animation-fill-mode: forwards;
 	}
@@ -1924,7 +2033,74 @@ a{
 	#anim4{
 		animation-delay: 2s;
 	}
+	#anim2{
+		animation-delay: 3s;
+	}
+	#anim6{
+		animation-delay: 4s;
+	}
+	#anim5{
+		animation-delay: 5s;
+	}
+	#anim7{
+		animation-delay: 6s;
+	}
+	
 }
+
+
+//animation 2
+
+.animate .our-garanties__icon .icon{
+	animation: startIcons 1s;
+	animation-fill-mode: forwards;
+}
+
+.animate .our-garanties__icon.anim2 .icon,
+.animate .our-garanties__icon.anim2 + p{
+	animation-delay: 1s;
+}
+.animate .our-garanties__icon.anim3 .icon,
+.animate .our-garanties__icon.anim3 + p{
+	animation-delay: 2s;
+}
+.animate .our-garanties__icon.anim4 .icon,
+.animate .our-garanties__icon.anim4 + p{
+	animation-delay: 3s;
+}
+.animate .our-garanties__icon.anim5 .icon,
+.animate .our-garanties__icon.anim5 + p{
+	animation-delay: 4s;
+}
+
+
+
+
+@keyframes startIcons {  
+    0% {
+      top: 0;
+    }
+    50% {
+      transform: scale(1.7);
+      top: -100px;
+    }
+    100% {
+		top: 0;
+		transform: scale(1);
+    }
+  }
+
+@keyframes getTop {  
+    from {
+      opacity: 0;
+      top: 10px;
+    }
+    to {
+      top: 0px;
+      opacity: 1;
+    }
+  }
+
 
 @keyframes getDefault {  
     from {
