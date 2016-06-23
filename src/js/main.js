@@ -4,6 +4,7 @@
 //= ../../bower_components/jquery/dist/jquery.min.js
 //= ../../bower_components/jquery-validation/dist/jquery.validate.js
 //= ../../bower_components/Swiper/dist/js/swiper.min.js
+//= ../../bower_components/page-scroll-to-id/jquery.malihu.PageScroll2id.js
 
 /*
     Custom
@@ -66,8 +67,16 @@ function setCounter(){
 
 $(document).ready(function() {
 
+ $("a[rel='m_PageScroll2id']").mPageScroll2id({
+  clickedClass: "active",
+  scrollEasing: "easeInOutExpo",
+  scrollSpeed: 700
+ });
 
 
+$(".calculator__slider__slide1__content__chbxs__chbx-wrap").click(function(event) {
+  console.log($(this).find("input"));
+});
 
 
 
@@ -80,16 +89,17 @@ $(document).ready(function() {
 
 $(window).scroll(function(event) {
   var howWeWorkOffset = $(".how-we-work").offset().top;
-var whoWork = $(".who-work").offset().top + 200;
+var whoWork = $(".who-work").offset().top + 200; 
   var sepor = $(document).scrollTop();
   console.log(sepor);
-  if(sepor>howWeWorkOffset) {
+  if(sepor >= howWeWorkOffset) {
     $("section.how-we-work").addClass("animate");
+    $(".how-we-work__item").addClass("animate");
   }
-  if(sepor>whoWork) {
+  if(sepor >= whoWork) {
     $(".our-garanties__icons").addClass("animate");
   }
-  if(sepor > whoWork) {
+  if(sepor >= whoWork) {
     setCounter();
   }
 });
@@ -136,6 +146,20 @@ owl3items.owlCarousel({
         nav:false,
         items:8,
         autoplay: true,
+        responsive : {
+          0 : {
+              items:8,
+          },
+          480 : {
+              items:4,
+          },
+          768 : {
+              items:5,
+          },
+          1198 : {
+              items:8,
+          }
+      }
     });
 
 

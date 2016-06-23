@@ -1,115 +1,77 @@
 @media only screen and (max-width : 1200px) {
-	.header__logo, .footer__logo {width: 300px;}
-	.header__logo img, .footer__logo img{width: 100%; height: auto;}
-	.header__info,.footer__info{min-width: 620px;}
-	.our-advantages__title h2,
-	.calculator__title h2{font-size: 35px;}
-	.our-advantages{min-width: 534px;}
-	.completed-projects__carousel__item-img{width: 464px; margin-bottom: 2px;}
-	.completed-projects__carousel__item-type{padding: 15px 15px 15px 100px;}
-	.footer__info, .header__info{min-width: 667px;}
-	.footer__logo, .header__logo{width: 238px;}
-	.completed-projects__carousel__controls{width: 429px;}
+	.header__want-order a{padding: 17px 15px;}
+	.header__container{align-items: center;}
+	.header__logo{width: 171px;}
+	.header__phones{width: 158px;}
+	.header__want-order{width: 296px;}
+	.banner{padding-top: 136px;}
+	.banner__title h2{font-size: 36px;}
+	.banner__icons{width: 600px;}
+	.our-garanties__buttons{margin-top: 71px;}
+	.calculator__slider__slide1:after{border: 508px solid transparent;border-right: 64px solid #e7f3f2;}
+	.calculator__slider__slide2:after{border: 469px solid transparent;border-right: 64px solid #e74f4c;}
+	.who-work{padding: 30px 0px;}
+	.who-work__item.seo:before{left: 6px;}
+	.who-work__item-img span{width: 62px;height: 62px; border-radius: 50%;}
+	.who-work__item .logo img{width: 230px; }
+	.who-work__item a{padding: 20px 30px; &:before{display: none;}}
+	.tarifs__container{justify-content: center;}
+	.tarifs__item{margin: 33px 60px;}
+	.calculator__title h2, .our-garanties__title-demo h2, .vide-about-us__title h2{font-size: 40px;}
+	.our-works__item{height: auto;}
+	.our-garanties{padding: 148px 15px;}
 
 }
 
 @media only screen and (max-width : 992px) {
-	.header__container{flex-wrap: wrap;}
-	.header__logo, .footer__logo{width: 100%; text-align: center; margin-bottom: 20px;}
-	.header__logo img, .footer__logo img{width: 300px; height: auto;}
-	.header__info,.footer__info{min-width: 100%;}
-	.header{height: auto; padding: 20px 10px;}
-	.banner__inner{flex-direction: column; padding: 35px; max-height: 10000px;}
-	.banner__inner__question{margin-bottom: 30px;}
-	.banner__inner__form-wrap{margin-left: 0;}
-	.calculator{width: 340px;}
-	.our-advantages{min-width: 340px;}
-	.calculator__inner, .our-advantages__inner{padding: 40px 5px;}
-	.our-advantages__item span, .quality-standards__item span{font-size: 15px;}
-	.how-we-work__steps::before{display: none;}
-	.how-we-work__steps {justify-content: space-around; flex-wrap: wrap;}
-	.how-we-work__step__circle{margin-bottom: 45px;}
-	.how-we-work__step__circle::after{bottom: -31px;}
-	.how-we-work__step{margin-bottom: 30px;}
-	.completed-projects__carousel__controls{position: relative; width: 100%; margin-bottom: 30px;}
-	.completed-projects__carousel__item-text{padding: 0px 15px;}
-	.order__inner{flex-direction: column;}
-	.order__text,.order__form-wrap{width: 100%; margin-bottom: 20px;}
-	.banner{padding: 20px 0px;}
-	.banner__inner__question{justify-content: center; padding-top: 10px; border-top: 1px solid #fff;}
-	.banner__inner__losung{padding: 15px 0;}
-	.banner__inner__losung h1{margin-bottom: 30px;}
-	.completed-projects__carousel__item-text{margin-top: 15px; width: 100%;}
-	.completed-projects__carousel__item-img{width: 100%;}
-	.banner__inner__losung, .banner__inner__form-wrap{width: 100%;}
-	.our-video{min-height: 300px;}
-
+	.header{position: relative;}
+	.header__container{flex-wrap: wrap;    justify-content: space-around;}
+	.header__info{margin-top: 20px;}
+	.banner{padding-top: 27px;}
+	.who-work__item{width: 50%;}
+	.who-work__item.web{padding-left: 50px;}
+	.our-works__item{width: 33.3334%;}
+	.tarifs__item{margin: 33px 31px;}
+	.calculator__title h2, .our-garanties__title-demo h2, .vide-about-us__title h2{font-size: 32px;}
+	.tarifs__title h2{font-size: 41px;}
+	.our-garanties__icons{flex-wrap: wrap;}
+	.our-garanties__icon{margin-bottom: 30px;}
+	.footer__text{width: 336px;}
 
 }	
  
 @media only screen and (max-width : 768px) {
-	.header__info,.footer__info{flex-wrap: wrap; justify-content: space-around;}
-	.header__info__mail, .header__info__phones,.header__info__order,
-	.footer__info__mail, .footer__info__phones,.footer__info__order{margin-bottom: 20px; display: flex;}
-	.header__info__order-link, .footer__info__order-link{top: 0;}
-	.header__info__phones, .footer__info__phones{justify-content: space-between; flex-direction: column;}
-	.header__logo, .footer__logo{margin-bottom: 50px;}
-	.header, .footer{padding-left: 0; padding-right: 0;}
-	.banner__inner__question{font-size: 27px;}
-	.banner__inner__form-wrap{min-width: 100%;}
-	.capabilities__items{padding-left: 74px; text-align: left;}
-	.capabilities__circles{ flex-wrap: wrap; justify-content: space-around;}
-	.capabilities__circles-descr{padding-bottom: 30px;}
-	.combo-section__inner{flex-direction: column;}
-	.calculator{width: 100%; max-width: 100%; margin-bottom: 30px;}
-	.calculator, .our-advantages{min-width: 100%;}
-	.combo-section{height: 1500px; min-height: 1500px;}
-	.how-we-work__title{margin-bottom: 40px;}
-	.completed-projects__carousel__item-img{width: 100%;}
-	.completed-projects__carousel__item-img{width: 100%; height: auto; margin-bottom: 25px;}
-	.completed-projects__carousel__item-text h4{margin-bottom: 14px;}
-	.completed-projects, .how-we-work{padding: 40px 0;}
-	.completed-projects__title, .quality-standards__title {margin-bottom: 40px;}
-	.quality-standards__container{padding-top: 231px; padding-left: 66px; background-position: center top;}
-	.quality-standards__container::after{top: 0; left: 50%; margin-left: -100px; margin-top: auto;}
-	.quality-standards,.certificates{padding: 40px 0;}
-	.certificates__title{margin-bottom: 40px;}
-	.certificates__container a{margin-bottom: 30px;}
-	.footer__info__mail, .footer__info__order, .footer__info__phones, .header__info__mail, .header__info__order, .header__info__phones{margin: 5px 5px 23px;}
-	.completed-projects__carousel__item-descr{padding: 15px;}
-	.calculator__inner, .our-advantages__inner{min-height: auto;}
-	.banner__inner__losung{width: auto;}
-	.order__inner{padding: 5px 10px;}
-	.capabilities__inner{flex-wrap: wrap; justify-content: center; padding: 35px 0;}
-	.our-video{width: 100% !important; margin-right: 0 !important; margin-bottom: 30px !important;}
-	.capabilities__items{width: 100%; max-width: 100%;}
+	.header__container{text-align: center;flex-direction: column; justify-content: space-around;}
+	.header__logo,
+	.header__want-order{margin-bottom: 20px;}
+	.banner__title h2{font-size: 22px;}
+	.banner__icons{width: 100%; flex-wrap: wrap; flex-direction: column; align-items: center;}
+	.banner{background-color: #ededed;background-image: url("/img/banner-phone.png");}
+	.banner__icon{margin-bottom: 30px;}
+	.banner{padding-bottom: 213px; height: auto;background-size: cover; background-position: center bottom;}
+	.our-garanties__buttons{flex-direction: column;}
+	.our-garanties__button{margin-bottom: 20px;}
+	.calculator__title h2, .our-garanties__title-demo h2, .vide-about-us__title h2{font-size: 21px;}
+	.who-work{padding: 0px;}
+	.who-work__title h2{font-size: 23px;}
+	.who-work__title{padding: 0px; padding-bottom: 25px;}
+	.who-work__item{width: 100%;}
+	.maps__map-wrap{width: 100%;height: 50%;}
+	.maps{flex-direction: column;}
+	.maps__name{font-size: 14px;padding: 15px;&--top{top: 0px; right: 0px;}&--bottom{bottom:0;left:0;}}
+	.maps__info{width: 100%; height: 85px; position: absolute; top: 50%; margin-top: -50px;border-radius: 0;}
+	.reviews{min-height: 700px; padding: 80px 0;}
+	.footer__phones{width: 100%;}
+	.maps__mail{display: flex;padding: 10px; justify-content: center; align-items: center; height: auto; display: flex;}
+	.maps__mail span,.maps__mail br{display: none;}
+	.maps__phones{width: 100%;height: auto; padding: 10px; .icon-phone{display: none;}}
+	.maps__phones .header__phones-wrap{display: flex; width: 100%;}
+
 }
 
 
 @media only screen and (max-width : 480px) {
-	.footer__logo img, .header__logo img{width: 280px;}
-	.banner__inner{padding: 30px 10px;}
-	.our-services__catalog__filters a:not(:last-child)::after{display: none;}
-	.our-services__title{margin: 40px 0;}
-	.title h2{font-size: 30px;}
-	.capabilities__items{padding-left: 55px;}
-	.our-services__download{margin: 40px;}
-	.combo-section{height: 1600px; min-height: 1600px;}
-	.how-we-work{padding: 40px 0;}
-	.completed-projects__carousel__control svg{height: 55px;}
-	.order__text{padding: 10px 20px;}
-	.order__form__input{width: 100%;}
-	.order{padding: 25px 0;}
-	.banner__container{padding: 4px;}
-	.banner__inner__losung{font-size: 32px;}
-	.banner__inner__losung h1{font-size: 41px;}
-	.our-advantages__item, .quality-standards__item{text-align: left;}
-	.container{padding-left: 0;padding-right: 0;}
-	.capabilities__item {font-size: 17px;}
-	.capabilities__item span:before{    left: -35px;}
-	.footer__bottom__container{flex-direction: column; text-align: center;}
-	.our-video{min-height: 177px !important; max-width: 80% !important;}
-	.capabilities__items{justify-content: center; align-items: center;}
+	
 }
 
 @media only screen and (max-width : 360px) {

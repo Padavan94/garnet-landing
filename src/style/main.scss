@@ -218,6 +218,13 @@ a{
 		padding-top: 150px;
 		position: relative;
 		width: 191px;
+		p{
+			font-size: 17px;
+			font-family: "Museo-300";
+			span{
+				font-family: "Museo-900";
+			}
+		}
 		&:before{
 			content: "";
 			width: 126px;
@@ -1997,7 +2004,6 @@ a{
 			color: #fff;
 		}
 	}
-
 	&__map{
 		width: 100%;
 		height: 100%;
@@ -2042,6 +2048,131 @@ a{
 			color: #383838;
 			margin: 0;
 			font-family: "Museo-900";
+		}
+	}
+	&__container{
+		position: relative;
+	}
+	&__item{
+		font-size: 14px;
+		text-align: left;
+		display: inline-block;
+		transform: translate(-10px, -10px);
+		h6{
+			text-transform: uppercase;
+			font-family: "Museo-900";
+			margin-bottom: 2px;
+		}
+		&.animate{
+			animation: getDefault 1.5s;
+			animation-fill-mode: forwards;
+		}
+		&.getInfo{
+			position: absolute;
+			right: 10%;
+			top: -12px;
+			opacity: 0;
+			&:before{
+				width: 146px;
+				height: 69px;
+				content: "";
+				position: absolute;
+				right: calc(100% + 19px);
+				top: 0;
+				background-image: url("/img/some-icons2.png");
+				background-repeat: no-repeat;
+			}
+		}
+		&.prepayment{
+			position: absolute;
+			left: 1%;
+			top: 4px;
+			opacity: 0;
+			animation-delay: 1.5s;
+			&:before{
+				width: 149px;
+				height: 79px;
+				content: "";
+				position: absolute;
+				left: calc(100% + 19px);
+				top: 0;
+				background-image: url("/img/some-icons2.png");
+				background-position: left -69px;
+				background-repeat: no-repeat;
+			}
+		}
+		&.design{
+			position: absolute;
+			left: -6%;
+			top: 500px;
+			opacity: 0;
+			animation-delay: 2.5s;
+			&:before{
+				width: 149px;
+				height: 79px;
+				content: "";
+				position: absolute;
+				left: 0;
+				top: -79px;
+				background-image: url("/img/some-icons2.png");
+				background-position: left -229px;
+				background-repeat: no-repeat;
+			}
+		}
+		&.htmlcss{
+			position: absolute;
+			right: -9%;
+			top: 157px;
+			opacity: 0;
+			animation-delay: 3.5s;
+			&:before{
+				width: 146px;
+				height: 69px;
+				content: "";
+				position: absolute;
+				right: calc(100% + 19px);
+				top: 0;
+				background-position: left -149px;
+				background-image: url("/img/some-icons2.png");
+				background-repeat: no-repeat;
+			}
+		}
+		
+		&.testing{
+			position: absolute;
+			right: -9%;
+			top: 518px;
+			opacity: 0;
+			animation-delay: 5.5s;
+			&:before{
+				width: 146px;
+				height: 69px;
+				content: "";
+				position: absolute;
+				right: calc(100% + 19px);
+				top: 0;
+				background-position: left -309px;
+				background-image: url("/img/some-icons2.png");
+				background-repeat: no-repeat;
+			}
+		}
+		&.giveCust{
+			position: absolute;
+			right: 30%;
+			bottom: 60px;
+			opacity: 0;
+			animation-delay: 6.5s;
+			&:before{
+				width: 146px;
+				height: 69px;
+				content: "";
+				position: absolute;
+				right: calc(100% + 19px);
+				top: 0;
+				background-position: left -392px;
+				background-image: url("/img/some-icons2.png");
+				background-repeat: no-repeat;
+			}
 		}
 	}
 	svg{
@@ -2130,15 +2261,7 @@ a{
 	.swiper-pagination-bullet-active{
 		background-color: #8c8c8c;
 	}
-
-
 }
-
-
-
-
-
-
 
 .footer{
 	padding: 105px 0px;
@@ -2191,6 +2314,55 @@ a{
 		}
 		span{
 			color: #e74f4c;
+		}
+	}
+}
+
+.navigation{
+	position: fixed;
+	height: 100vh;
+	top: 0;
+	right: 34px;
+	z-index: 999999;
+	width: 41px;
+	padding: 130px 0px;
+	&__inner{
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+	}
+	&__dot{
+		width: 41px;
+		height: 41px;
+		border: 1px solid #545454;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		&:not(:last-child):after{
+			content: "";
+			width: 1px;
+			height: 28px;
+			background-color: #545454;
+			left: 50%;
+			top: 100%;
+			position: absolute;
+		}
+		svg{
+			font-size: 23px;
+			color: #545454;
+			transition: all .2s ease;
+		}
+		&:hover,&.mPS2id-highlight-first{
+			background-color: #e74f4c;
+			color: #fff;
+			border-color: #e74f4c;
+			svg{
+				color: #fff;
+			}
 		}
 	}
 }
@@ -2255,10 +2427,10 @@ a{
 		animation-delay: 4s;
 	}
 	#anim5{
-		animation-delay: 5s;
+		animation-delay: 6s;
 	}
 	#anim7{
-		animation-delay: 6s;
+		animation-delay: 5s;
 	}
 	
 }
