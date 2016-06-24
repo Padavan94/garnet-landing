@@ -25,6 +25,11 @@ a{
 	}
 }
 
+@mixin size($height, $width){
+	height: $height;
+	width: $width;
+}
+
 .sepor{
 	position: fixed;
 	top: 50%;
@@ -38,6 +43,7 @@ a{
 
 
 .header{
+
 	background-color: #383736;
 	padding: 19px 0px;
 	color: #fff;
@@ -1810,7 +1816,7 @@ a{
 	position: relative;
 	z-index: 10;
 	box-shadow: 0px 36px 49px rgba(0,0,0,.3);
-	padding: 148px 260px;
+	padding: 148px 0px;
 	&__title{
 		margin-bottom: 90px;
 		text-align: center;
@@ -2179,6 +2185,48 @@ a{
 		width: 100%;
 		height: auto;
 	}
+	&__mobile-item{
+		margin-bottom: 30px;
+		.how-we-work__item{
+			position: relative;
+			right: auto;
+			top: auto;
+			left: auto;
+			bottom: auto;
+			margin-bottom: 15px;
+			padding-left: 80px;
+			animation: none;
+			opacity: 1;
+			&:before{
+				width: 62px;
+				height: 62px;
+				left: 0;
+				top: 50%;
+				margin-top: -31px;
+				content: "";
+				background-image: url("/img/some-icons3.png");
+				background-position: center top;
+			}
+			&.getInfo:before{
+				background-position: center 1px;
+			}
+			&.prepayment:before{
+				background-position: center -61px;
+			}
+			&.design:before{
+				background-position: center -125px;
+			}
+			&.htmlcss:before{
+				background-position: center -186px;
+			}
+			&.testing:before{
+				background-position: center -248px;
+			}
+			&.giveCust:before{
+				background-position: center -310px;
+			}
+		}
+	}
 }
 
 .reviews{
@@ -2332,6 +2380,15 @@ a{
 		flex-direction: column;
 		justify-content: space-between;
 		position: relative;
+		.span{
+			width: 1px;
+			display: block;
+			flex-grow: 1;
+			background-color: #545454;
+			left: 50%;
+			position: relative;
+			margin-left: -.5px;
+		}
 	}
 	&__dot{
 		width: 41px;
@@ -2343,7 +2400,7 @@ a{
 		justify-content: center;
 		position: relative;
 		&:not(:last-child):after{
-			content: "";
+			/* content: ""; */
 			width: 1px;
 			height: 28px;
 			background-color: #545454;

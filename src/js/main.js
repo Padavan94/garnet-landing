@@ -138,6 +138,20 @@ owl2items.owlCarousel({
         nav:false,
         items:2,
         autoplay: true,
+        responsive : {
+            0 : {
+                items:2,
+            },
+            480 : {
+                items:4,
+            },
+            768 : {
+                items:5,
+            },
+            1198 : {
+                items:8,
+            }
+        }
     });
 
 owl3items.owlCarousel({
@@ -148,7 +162,7 @@ owl3items.owlCarousel({
         autoplay: true,
         responsive : {
           0 : {
-              items:8,
+              items:4,
           },
           480 : {
               items:4,

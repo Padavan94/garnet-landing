@@ -1,3 +1,7 @@
+@media only screen and (min-width : 1200px) {
+	.our-works__item{height: auto;}
+}
+
 @media only screen and (max-width : 1200px) {
 	.header__want-order a{padding: 17px 15px;}
 	.header__container{align-items: center;}
@@ -20,6 +24,14 @@
 	.calculator__title h2, .our-garanties__title-demo h2, .vide-about-us__title h2{font-size: 40px;}
 	.our-works__item{height: auto;}
 	.our-garanties{padding: 148px 15px;}
+	.maps__phones{width: 100%;}
+	.how-we-work__item:before{display: none;}
+	.how-we-work__item.getInfo{right: 17%; top: -18px;}
+	.how-we-work__item.htmlcss{right: -4%; top: 123px;}
+	.how-we-work__item.design{left: -2%; top: 377px;}
+	.how-we-work__item.giveCust{bottom: 0;}
+	.how-we-work__item.testing{top: 422px; right: 0;}
+	.how-we-work__item.giveCust{right: 47%;}
 
 }
 
@@ -27,7 +39,7 @@
 	.header{position: relative;}
 	.header__container{flex-wrap: wrap;    justify-content: space-around;}
 	.header__info{margin-top: 20px;}
-	.banner{padding-top: 27px;}
+	.banner{padding-top: 27px; height: auto; padding: 30px 10px;}
 	.who-work__item{width: 50%;}
 	.who-work__item.web{padding-left: 50px;}
 	.our-works__item{width: 33.3334%;}
@@ -37,7 +49,17 @@
 	.our-garanties__icons{flex-wrap: wrap;}
 	.our-garanties__icon{margin-bottom: 30px;}
 	.footer__text{width: 336px;}
-
+	.navigation{padding: 3px 0px;}
+	.maps__phones{width: 100%;}
+	.maps__name{font-size: 14px;padding: 15px;&--top{top: 0px; right: 0px;}&--bottom{bottom:0;left:0;}}
+	.tarifs{padding: 60px 0px;}
+	.how-we-work__item.getInfo{right: 17%; top: -18px;}
+	.how-we-work__item.htmlcss{right: -4%; top: 100px;}
+	.how-we-work__item.design{left: -2%; top: 260px;}
+	.how-we-work__item.giveCust{bottom: 0;}
+	.how-we-work__item.testing{top: 300px; right: 0;}
+	.how-we-work__item.giveCust{right: 39%;}
+	.our-garanties__icons{margin-bottom: 30px;}
 }	
  
 @media only screen and (max-width : 768px) {
@@ -52,7 +74,7 @@
 	.our-garanties__buttons{flex-direction: column;}
 	.our-garanties__button{margin-bottom: 20px;}
 	.calculator__title h2, .our-garanties__title-demo h2, .vide-about-us__title h2{font-size: 21px;}
-	.who-work{padding: 0px;}
+	.who-work{padding: 25px 0px;}
 	.who-work__title h2{font-size: 23px;}
 	.who-work__title{padding: 0px; padding-bottom: 25px;}
 	.who-work__item{width: 100%;}
@@ -66,12 +88,59 @@
 	.maps__mail span,.maps__mail br{display: none;}
 	.maps__phones{width: 100%;height: auto; padding: 10px; .icon-phone{display: none;}}
 	.maps__phones .header__phones-wrap{display: flex; width: 100%;}
-
+	.who-work__item .logo{padding-top: 0;}
+	.who-work__item{margin-bottom: 25px;}
+	.who-work__item.web{padding-left: 0;}
+	.who-work__item.web:after{display: none;}
+	.who-work .counter{padding-left: 0; padding-top: 60px; margin-top: 25px;}
+	.who-work .counter:before{left: 50%; margin-left: -70px; top: -25px; position: absolute;}
+	.our-works__item{width: 50%;}
+	.vide-about-us__title{width: 100%;}
+	.our-garanties{padding: 20px 15px;}
+	.our-garanties__title{width: 100%; h2{font-size: 22px;}}
+	.our-garanties__icons{margin-bottom: 40px;}
+	.our-garanties__titles{text-align: center;}
+	.footer__container{text-align: center;flex-direction: column;align-items: center; .icon-phone{display: none;}}
+	.footer__logo{margin-right: 0; margin-bottom: 15px;}
+	.footer__text{margin-bottom: 15px;}
+	.footer__phones-mail{font-size: 18px; color: #fff; &:hover{color: #e74f4c;}}
+	.our-works__title h2,
+	.tarifs__title h2,
+	.reviews__title h2{font-size: 22px;}
+	.tarifs{padding: 30px 15px;}
+	.reviews__message{width: 100%;}
+	.vide-about-us{padding-top: 30px;}
+	.navigation{padding: 15px 0px; right: 10px;}
+	.footer{padding: 35px 0;}
+	.tarifs{padding: 60px 0px;}
+	.navigation{display: none;}
+	.who-work__item.web{margin-top: 40px;}
+	.banner{padding-bottom: 75px;}
+	.how-we-work__item.getInfo:before{display: block;}
+	.how-we-work__item.htmlcss:before{display: block;}
+	.how-we-work__item.prepayment:before{display: block;}
+	.how-we-work__item.design:before{display: block;}
+	.how-we-work__item.giveCust:before{display: block;}
+	.how-we-work__item.testing:before{display: block;}
+	.how-we-work__item.giveCust:before{display: block;}
+	.how-we-work__item{top: 0 !important; left: 0 !important;right: 0 !important; bottom: 0 !important;}
 }
 
 
 @media only screen and (max-width : 480px) {
-	
+	.footer__text{width: 100%;}
+	.maps__phones{font-size: 12px;}
+	.tarifs__item{margin: 0; margin-bottom: 60px;}
+	.vide-about-us__show-video{padding: 26px 9px 26px 100px;}
+	.vide-about-us__play:after{display: none;}
+	.banner{padding-bottom: 50px; background-image: none;}
+	.our-garanties__buttons{margin-top: 15px;}
+	.how-we-work{padding: 35px 0px;}
+	.how-we-work__title h2{font-size: 26px;}
+	.our-garanties__buttons{margin-top: 50px;}
+	.how-we-work__mobile-item{margin-bottom: 50px;}
+	.how-we-work__mobile-item .how-we-work__item{margin-bottom: 4px;}
+	.our-works__title h2, .reviews__title h2, .tarifs__title h2{font-size: 20px;}
 }
 
 @media only screen and (max-width : 360px) {
