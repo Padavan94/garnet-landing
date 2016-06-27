@@ -143,13 +143,13 @@ owl2items.owlCarousel({
                 items:2,
             },
             480 : {
-                items:4,
+                items:6,
             },
             768 : {
-                items:5,
+                items:4,
             },
             1198 : {
-                items:8,
+                items:2,
             }
         }
     });
@@ -237,13 +237,15 @@ var kiev, odessa, markerOdessa, markerKiev;
     odessa = new google.maps.Map(document.getElementById('map-kiev'), {
       center: {lat: 46.471610, lng: 30.736011},
       zoom: 12,
-      styles: odessaStyle
+      styles: odessaStyle,
+      scrollwheel: false,
     });
 
     kiev = new google.maps.Map(document.getElementById('map-odessa'), {
       center: {lat: 50.393920, lng: 30.478775},
       zoom: 12,
-      styles: kievStyle
+      styles: kievStyle,
+      scrollwheel: false,
     });
 
     var markerOdessa = new google.maps.Marker({
