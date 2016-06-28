@@ -30,6 +30,50 @@ a{
 	width: $width;
 }
 
+.calculator {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 40px 47px;
+	width: 485px;
+	&__title {
+		z-index: 2;
+		position: relative;
+		top:30px;
+		display: inline-block;
+		&:before {
+			display: block;
+			position: absolute;
+			content: '';
+			width: 90%;
+			left:0;
+			z-index: -1;	
+			bottom:-10px;
+			height: 60px;
+			left: 50%;
+			margin-left: -45%;
+			background:rgba(0,0,0,0.1);
+			transform: rotate(1.5deg);
+		}
+		&:after {
+			display: block;
+			content: '';
+			position: relative;
+		}
+		h2{
+			margin: 0;
+			display: block;
+			z-index: 5;
+			opacity: 0.99;
+			background:#fff;
+			padding: 30px 40px;
+			font-family: "Museo-900";
+			font-size: 48px;
+			color: #383838;
+			position: relative;
+		}
+	}
+}
+
 .sepor{
 	position: fixed;
 	top: 50%;
@@ -179,19 +223,20 @@ a{
 	}
 }
 
+
 .banner {
-	height: 100vh;
 	background-image: url("/img/main.jpg");
 	background-position: center top;
 	background-size: cover;
 	text-align: center;
-	padding-top: 187px;
+	padding: 200px 0;
 	&__buttons{
-		margin-top: 52px;
+		margin-top: 12px !important;
 	}
 	&__title{
 		position: relative;
 		z-index: 2;
+		margin-bottom: 36px;
 		h2{
 			font-size: 49px;
 			background-color: #e74f4c;
@@ -208,22 +253,27 @@ a{
 				position: relative;
 				z-index: 5;
 				opacity: .99;
-				
 			}
 		}
-
+	}
+	&__container{
+		display: flex;
+		justify-content: flex-start;
 	}
 	&__icons{
 		display: flex;
 		justify-content: space-between;
-		width: 615px;
-		margin: 0px auto;
-		margin-top: 28px;
+		width: 50%;
+		margin-top: 37px;
+		flex-direction: column;
+		padding-left: 151px;
 	}
 	&__icon{
-		padding-top: 150px;
+		padding-left: 140px;
 		position: relative;
-		width: 191px;
+		width: 356px;
+		text-align: left;
+		margin-bottom: 75px;
 		p{
 			font-size: 17px;
 			font-family: "Museo-300";
@@ -238,9 +288,9 @@ a{
 			background-image: url("/img/icons-banner.png");
 			background-repeat: no-repeat;
 			position: absolute;
-			top: 0;
-			left: 50%;
-			margin-left: -63px;
+			top: 50%;
+			left: 0;
+			margin-top: -63px;
 		}
 		&.ic1:before{
 			height: 126px;
@@ -487,894 +537,6 @@ a{
 		span{
 			color: #383838;
 			font-size: 17px;
-		}
-	}
-}
-
-.calculator
-{
-	text-align: center;
-	margin-top: -112px;
-	&__title
-	{
-		z-index: 2;
-		position: relative;
-		top:30px;
-		display: inline-block;
-		
-		&:before
-		{
-			display: block;
-			position: absolute;
-			content: '';
-			width: 90%;
-			left:0;
-			z-index: -1;	
-			bottom:-10px;
-			height: 60px;
-			left: 50%;
-			margin-left: -45%;
-			background:rgba(0,0,0,0.1);
-			transform: rotate(1.5deg);
-		}
-
-		&:after
-		{
-			display: block;
-			content: '';
-			position: relative;
-		}
-	
-	
-		h2{
-			margin: 0;
-			display: block;
-			z-index: 5;
-			opacity: 0.99;
-			background:#fff;
-			padding: 30px 40px;
-			font-family: "Museo-900";
-			font-size: 48px;
-			color: #383838;
-			position: relative;
-
-	
-		}
-	}
-
-	&__slider
-	{
-
-		&__slide3
-		{
-			min-height: 930px;
-			background-color: #e74f4c;
-			padding: 90px 0;
-			position: relative;
-			
-			&__content
-			{
-				color: #fff;
-				display: flex;
-				flex-direction: column;
-				justify-content:center;
-				align-items: center;
-				position: relative;
-				
-				&__step-text
-				{
-					position: absolute;
-					top: 0;
-					left: 0;
-					color: #ffc5c4;
-					font-family: "Museo-900";
-					font-size: 21px;
-					text-transform: uppercase;
-					letter-spacing: 1px;
-					span 
-					{
-						background:#fff;
-						color: #e74f4c ;
-						border-radius: 50%;
-						padding: 10px 15px;
-						margin-left: 3px;
-					}
-				}
-				&__title
-				{
-					
-					font-family: "Museo-900";
-					font-size: 27px;
-					letter-spacing: 1px;
-					position: relative;
-					margin-bottom: 50px;
-					color: #fff;
-					&:after
-					{
-						content: '';
-						position: absolute;
-						width: 76px;
-						height: 4px;
-						left: 50%;
-						margin-left: -38px;
-						bottom: -25px;
-						background: #fff;
-
-					}
-
-				}
-				&__chbxs
-				{
-
-					display: flex;
-					justify-content: space-beetween;
-					margin-top:55px;
-					margin-bottom: 55px;
-					&__chbx-wrap
-					{
-						margin: 0 25px;
-						position: relative;
-						min-width: 190px;
-						min-height: 270px;
-						background-position: center top;
-						background-repeat: no-repeat;
-						padding-top: 180px;
-						padding-right: 20px;
-						padding-left: 30px;
-						font-family: "Museo-900";
-						font-size: 17px;
-						letter-spacing: 1px;
-
-						&.ic8
-						{
-							background-image: url("/img/icon8.png");
-						}
-						&.ic9
-						{
-							background-image: url("/img/icon9.png");
-						}
-					
-					
-						&__text
-						{
-							padding-top: 20px;
-							max-width: 510px;
-							text-align: center;
-							span
-							{
-
-								
-								&.descr
-								{
-									color: #fff;
-									padding-top: 10px;
-									font-size: 14px;
-									font-family: "Museo-300";
-								}
-								&.black
-								{
-									font-family: "Museo-900";
-								}
-								&.sub-descr
-								{
-									word-spacing: 1px;
-									display: inline-block;
-									margin-top: 20px;
-									font-size: 15px;
-									font-family: "Museo-900";
-									padding: 10px 20px;
-									position: relative;
-									&:before{
-										content: '';
-										position: absolute;
-										width: 10px;
-										top:-25px;
-										left: 50%;
-										margin-left: -16px;
-										border: 16px solid transparent;
-										border-bottom: 16px solid #24b7d2;
-									}
-									&.blue{background:#24b7d2;}
-									&.green{background:#9dc873;&:before{border-bottom-color:#9dc873; }}
-									&.vasil{background:#3dc5af;&:before{border-bottom-color:#3dc5af; }}
-								}
-						}
-						}
-						&__rad-outter{
-						
-							text-align: center;
-							position: relative;
-						input{
-							position: absolute;
-							left: 0;
-							top: 0;
-							opacity: 0;
-						}
-						label
-						{	color: #fff;	
-							cursor: pointer;
-							padding-left: 50px;
-							position: relative;
-							&:before{
-								position: absolute;
-								content: '';
-								height: 40px;
-								width: 40px;
-								background: transparent;
-								border: 1px #fff solid;
-								border-radius: 50%;
-								top:50%;
-								margin-top: -20px;
-								left:0;
-							}
-							&:after{
-								position: absolute;
-								content: '';
-								height: 40px;
-								width: 40px;
-								background-image: url("/img/chbx.png");
-								background-repeat: no-repeat;
-								background-position: center;
-								border: none;
-								border-radius: 50%;
-								top:50%;
-								margin-top: -20px;
-								left:0;
-								opacity: 0;
-								transform:scale(.5);
-								transition: all 0.3s ease;
-							}
-						}
-						input
-						{
-					/* 		opacity: 0;
-					position: absolute;
-					left: 0;
-					top: 0;
-					height: 0;
-					width: 0; */
-							&:checked + label:after
-							{
-								opacity: 1;
-								transform:scale(1);
-							}
-						}
-						}
-					}
-				}
-						&__submit-wrap{
-					
-					font-family: "Museo-900";
-					font-size: 16px;
-					border-radius: 10px;
-					color: #606060;
-					position: relative;
-					padding-right: 60px;
-					background-image: url("/img/calc.png");
-					background-position: right center;
-					background-repeat: no-repeat;
-	
-					&:after {
-						content: '';
-						position: absolute;
-						background-image: url("/img/but-arrow3.png");
-						width: 16px;
-						height: 13px;
-						right: 95px;
-						top: 23px;
-					
-					}
-		
-					input
-					{
-						text-transform: uppercase;
-						background: #fff;
-						padding: 20px 60px 20px 35px;
-						border-radius: 10px;
-						border: none;
-						letter-spacing: 1px;
-						box-shadow: 0px 4px 0px 0px #cccccc;
-						&:hover
-						{
-								color: #e74f4c;
-							background: #fff;
-						
-							
-							
-						}
-						&:focus{outline:none;}
-
-					}
-				}
-			}
-		}
-
-	
-		&__slide2
-		{
-			background-color: #e7f3f2;
-			padding: 90px 0;
-			position: relative;
-			min-height: 930px;
-				&:after
-				{
-					content: '';
-					position: absolute;
-					border: 465px solid transparent;
-					height: 100%;
-					right: 0;
-					top: 0;
-					border-right: 200px solid #e74f4c;
-					z-index: 1;
-					pointer-events:none;
-				}
-			&__content
-			{
-				color: #fff;
-				display: flex;
-				flex-direction: column;
-				justify-content:center;
-				align-items: center;
-				position: relative;
-				
-				&__step-text
-				{
-					position: absolute;
-					top: 0;
-					left: 0;
-					color: #859190;
-					font-family: "Museo-900";
-					font-size: 21px;
-					text-transform: uppercase;
-					letter-spacing: 1px;
-					span 
-					{
-						background:#859190;
-						color: #fff ;
-						border-radius: 50%;
-						padding: 10px 15px;
-						margin-left: 3px;
-					}
-				}
-				&__title
-				{
-					
-					font-family: "Museo-900";
-					font-size: 27px;
-					letter-spacing: 1px;
-					position: relative;
-					margin-bottom: 50px;
-					color: #4d5050;
-					&:after
-					{
-						content: '';
-						position: absolute;
-						width: 76px;
-						height: 4px;
-						left: 50%;
-						margin-left: -38px;
-						bottom: -25px;
-						background: #e74f4c;
-
-					}
-
-				}
-				&__chbxs
-				{
-					display: flex;
-					justify-content: space-between;
-					margin-top:55px;
-					margin-bottom: 55px;
-					&__chbx-wrap
-					{
-						
-						position: relative;
-						min-width: 190px;
-						min-height: 270px;
-						background-position: center top;
-						background-repeat: no-repeat;
-						padding-top: 180px;
-						padding-right: 20px;
-						padding-left: 30px;
-						font-family: "Museo-900";
-						font-size: 17px;
-						letter-spacing: 1px;
-
-						&.ic1
-						{
-							background-image: url("/img/icon5.png");
-						}
-						&.ic2
-						{
-							background-image: url("/img/icon6.png");
-						}
-						&.ic3
-						{
-							background-image: url("/img/icon7.png");
-						}
-					
-						&__text
-						{
-							padding-top: 20px;
-							max-width: 365px;
-							text-align: center;
-							span
-							{
-
-								
-								&.descr
-								{
-									color: #7c8988;
-									padding-top: 10px;
-									font-size: 14px;
-									font-family: "Museo-300";
-								}
-								&.black
-								{
-									font-family: "Museo-900";
-								}
-								&.sub-descr
-								{
-									word-spacing: 1px;
-									display: inline-block;
-									margin-top: 20px;
-									font-size: 15px;
-									font-family: "Museo-900";
-									padding: 10px 20px;
-									position: relative;
-									&:before{
-										content: '';
-										position: absolute;
-										width: 10px;
-										top:-25px;
-										left: 50%;
-										margin-left: -16px;
-										border: 16px solid transparent;
-										border-bottom: 16px solid #24b7d2;
-									}
-									&.blue{background:#24b7d2;}
-									&.green{background:#9dc873;&:before{border-bottom-color:#9dc873; }}
-									&.vasil{background:#3dc5af;&:before{border-bottom-color:#3dc5af; }}
-								}
-						}
-						}
-						&__rad-outter{
-						
-							text-align: center;
-							position: relative;
-						label
-						{	color: #4d5050;	
-							cursor: pointer;
-							padding-left: 50px;
-							position: relative;
-							&:before{
-								position: absolute;
-								content: '';
-								height: 40px;
-								width: 40px;
-								background: transparent;
-								border: 1px #e7514e solid;
-								border-radius: 50%;
-								top:50%;
-								margin-top: -20px;
-								left:0;
-							}
-							&:after{
-								position: absolute;
-								content: '';
-								height: 20px;
-								width: 20px;
-								background: #e7514e;
-								border: 1px #e7514e solid;
-								border-radius: 50%;
-								top:50%;
-								margin-top: -10px;
-								left:10px;
-								opacity: 0;
-								transform:scale(.5);
-								transition: all 0.3s ease;
-							}
-						}
-						input
-						{
-							opacity: 0;
-							position: absolute;
-							left: 0;
-							top: 0;
-							height: 0;
-							width: 0;
-							&:checked + label:after
-							{
-								opacity: 1;
-								transform:scale(1);
-							}
-						}
-						}
-					}
-				}
-		&__submit-wrap{
-					
-					font-family: "Museo-900";
-					font-size: 16px;
-					border-radius: 10px;
-					color: #fff;
-					position: relative;
-					pointer-events: none;
-					color: #000;
-					
-					&.active
-					{
-						pointer-events:auto;
-						color: #fff;
-					}
-					&:after {
-						content: '';
-						position: absolute;
-						background-image: url("/img/but-arrow.png");
-						width: 10px;
-						height: 15px;
-						right: 38px;
-						top: 23px;
-						background-position: center -15px;
-					}
-					&:hover
-						{
-						
-							&:after{
-								background-position: center top;
-							}
-
-							color: #e74f4c;
-
-							
-						}
-					input
-					{
-						text-transform: uppercase;
-						background: #e74f4c;
-						padding: 20px 60px 20px 35px;
-						border-radius: 10px;
-						border: none;
-						letter-spacing: 1px;
-						box-shadow: 0px 4px 0px 0px #cccccc;
-						&:hover
-						{
-							background: #fff;
-							box-shadow: none;
-							
-							box-shadow: 0px 4px 0px 0px transparent;
-						}
-						&:focus{outline:none;}
-
-					}
-				}
-
-		}
-
-	}
-
-
-
-		
-		&__slide1
-		{
-			background-color: #e74f4c;
-			padding: 90px 0;
-			position: relative;
-			min-height: 930px;
-				&:after
-		{
-			content: '';
-			position: absolute;
-			border: 465px solid transparent;
-			height: 100%;
-			right: 0;
-			top: 0;
-			border-right: 200px solid #e7f3f2;
-			z-index: 1;
-			pointer-events:none;
-		}
-			&__title
-			{
-				padding-bottom: 80px;
-				font-family: "Museo-500";
-				font-size: 30px;
-				color: #fff;
-				text-transform: uppercase;
-				letter-spacing: 3px;
-				position: relative;
-				z-index: 1;
-
-				
-
-			
-				span
-				{
-					&.black{
-						font-family: "Museo-900";
-
-					}
-					&.pad{
-						
-						background-color: #3ec6b0;
-						padding: 10px 20px;
-										
-						}
-					}
-				}
-
-			&__content
-			{
-				color: #fff;
-				display: flex;
-				flex-direction: column;
-				justify-content:center;
-				align-items: center;
-				position: relative;
-				
-				&__step-text
-				{
-					position: absolute;
-					top: 0;
-					left: 0;
-					color: #ffc5c4;
-					font-family: "Museo-900";
-					font-size: 21px;
-					text-transform: uppercase;
-					letter-spacing: 1px;
-					span 
-					{
-						background:#fff;
-						color:  #e74f4c;
-						border-radius: 50%;
-						padding: 10px 15px;
-						margin-left: 3px;
-					}
-				}
-				&__title
-				{
-					
-					font-family: "Museo-900";
-					font-size: 27px;
-					letter-spacing: 1px;
-					position: relative;
-					margin-bottom: 50px;
-					&:after
-					{
-						content: '';
-						position: absolute;
-						width: 76px;
-						height: 4px;
-						left: 50%;
-						margin-left: -38px;
-						bottom: -25px;
-						background: #fff;
-
-					}
-
-				}
-				&__inputs
-				{
-					display: flex;
-					justify-content: center;
-					&__input-wrap
-					{
-						max-width: 300px;
-						max-height: 60px;
-						margin: 0 8px;
-						position: relative;
-						&.name
-						{
-
-								&:before
-								{
-									content: '';
-									position: absolute;
-									background-image: url("/img/name-icon.png");
-									width: 12px;
-									height: 18px;
-									top: 50%;
-									margin-top: -9px;
-									left: 27px;
-									z-index: 1;
-								}
-						}
-
-						&.phone
-						{
-								&:before
-								{
-									content: '';
-									position: absolute;
-									background-image: url("/img/phone-icon.png");
-									width: 7px;
-									height: 18px;
-									top: 50%;
-									margin-top: -9px;
-									left: 30px;
-									z-index: 1;
-								}
-						}
-						input
-						{
-								padding: 20px 50px;
-							font-family: "Roboto";
-							font-size: 17px;
-							color: #3a3a3a;
-						
-							width: 100%;
-							height: 100%;
-							border: none;
-							border-radius: 10px;
-							font-weight: 700;
-							position: relative;
-							&:focus
-							{
-								outline: none;
-							}
-						
-						}
-					}
-				}
-
-				&__chbxs
-				{
-					display: flex;
-					justify-content: space-between;
-					margin-top:55px;
-					margin-bottom: 55px;
-					&__chbx-wrap
-					{
-						
-						position: relative;
-						min-width: 190px;
-						min-height: 270px;
-						background-position: center top;
-						background-repeat: no-repeat;
-						padding-top: 180px;
-						padding-right: 20px;
-						padding-left: 30px;
-						font-family: "Museo-900";
-						font-size: 17px;
-						letter-spacing: 1px;
-
-						&.ic1
-						{
-							background-image: url("/img/icon1.png");
-						}
-						&.ic2
-						{
-							background-image: url("/img/icon2.png");
-						}
-						&.ic3
-						{
-							background-image: url("/img/icon3.png");
-						}
-						&.ic4
-						{
-							background-image: url("/img/icon4.png");
-						}
-						&__text
-						{
-							padding-left: 50px;
-							text-align: left;
-							span
-							{
-
-								
-								&.descr
-								{
-									
-									padding-top: 10px;
-									font-size: 14px;
-									font-family: "Museo-300";
-								}
-						}
-						}
-						&__rad-outter{
-						
-							text-align: left;
-							position: relative;
-						label
-						{
-							cursor: pointer;
-							padding-left: 50px;
-							position: relative;
-							&:before{
-								position: absolute;
-								content: '';
-								height: 40px;
-								width: 40px;
-								background: transparent;
-								border: 1px #fff solid;
-								border-radius: 50%;
-								top:50%;
-								margin-top: -20px;
-								left:0;
-							}
-							&:after{
-								position: absolute;
-								content: '';
-								height: 20px;
-								width: 20px;
-								background: #fff;
-								border: 1px #fff solid;
-								border-radius: 50%;
-								top:50%;
-								margin-top: -10px;
-								left:10px;
-								opacity: 0;
-								transform:scale(.5);
-								transition: all 0.3s ease;
-							}
-						}
-						input
-						{
-							opacity: 0;
-							position: absolute;
-							left: 0;
-							top: 0;
-							height: 0;
-							width: 0;
-							&:checked + label:after
-							{
-								opacity: 1;
-								transform:scale(1);
-							}
-						}
-						}
-					}
-				}
-				&__submit-wrap{
-					margin-top: 15px;
-					font-family: "Museo-900";
-					font-size: 16px;
-					border-radius: 10px;
-					color: #cccccc;
-					position: relative;
-					pointer-events:none;
-
-					&.active
-					{
-						pointer-events:auto;
-						color: #6e6e6e;
-					}
-
-					&:after {
-						content: '';
-						position: absolute;
-						background-image: url("/img/but-arrow.png");
-						width: 10px;
-						height: 15px;
-						right: 38px;
-						top: 23px;
-						background-position: center bottom;
-					}
-					&:hover
-						{
-						
-							&:after{
-								background-position: center top;
-							}
-							color: #e74f4c;
-
-							
-						}
-					input
-					{
-						text-transform: uppercase;
-						background: #fff;
-						padding: 20px 60px 20px 35px;
-						border-radius: 10px;
-						border: none;
-						letter-spacing: 1px;
-						box-shadow: 0px 4px 0px 0px #cccccc;
-					
-						&:focus{outline:none;}
-
-					}
-				}
-			}
 		}
 	}
 }
