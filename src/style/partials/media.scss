@@ -10,7 +10,7 @@
 	.header__want-order{width: 296px;}
 	.banner{padding-top: 136px;}
 	.banner__title h2{font-size: 36px;}
-	.banner__icons{width: 600px;}
+	.banner__icons{padding-left: 75px;}
 	.our-garanties__buttons{margin-top: 71px;}
 	.calculator__slider__slide1:after{border: 508px solid transparent;border-right: 64px solid #e7f3f2;}
 	.calculator__slider__slide2:after{border: 469px solid transparent;border-right: 64px solid #e74f4c;}
@@ -32,6 +32,7 @@
 	.how-we-work__item.giveCust{bottom: 0;}
 	.how-we-work__item.testing{top: 422px; right: 0;}
 	.how-we-work__item.giveCust{right: 47%;}
+	.calculator__managers{padding: 0 139px;}
 
 }
 
@@ -60,6 +61,8 @@
 	.how-we-work__item.testing{top: 300px; right: 0;}
 	.how-we-work__item.giveCust{right: 39%;}
 	.our-garanties__icons{margin-bottom: 30px;}
+	.banner__icons{padding-left: 0;}
+	.calculator__managers{padding: 0 23px;}
 }	
  
 @media only screen and (max-width : 768px) {
@@ -68,10 +71,10 @@
 	.header__want-order{margin-bottom: 20px;}
 	.banner__title h2{font-size: 22px;}
 	.banner__icons{width: 100%; flex-wrap: wrap; flex-direction: column; align-items: center;}
-	.banner{background-color: #ededed;background-image: url("/img/banner-phone.png");}
-	.banner__icon{margin-bottom: 30px;}
+	.banner{background-color: #ededed;}
+	.banner__icon{margin-bottom: 88px;}
 	.banner{padding-bottom: 213px; height: auto;background-size: cover; background-position: center bottom;}
-	.our-garanties__buttons{flex-direction: column;}
+	.our-garanties__buttons{flex-direction: column; align-items: center;}
 	.our-garanties__button{margin-bottom: 20px;}
 	.calculator__title h2, .our-garanties__title-demo h2, .vide-about-us__title h2{font-size: 21px;}
 	.who-work{padding: 25px 0px;}
@@ -124,6 +127,24 @@
 	.how-we-work__item.testing:before{display: block;}
 	.how-we-work__item.giveCust:before{display: block;}
 	.how-we-work__item{top: 0 !important; left: 0 !important;right: 0 !important; bottom: 0 !important;}
+	.banner__container{flex-direction: column;}
+	.calculator{order: 1; width: 100%;}
+	.banner__icons{order: 2; padding-left: 0;}
+	.banner__icon{padding-top: 140px; padding-left: 0; text-align: center; margin-bottom: 40px; &:before{left: 50%; margin-left: -63px; top: 0; margin-top: 0;}}
+	.popup-order{max-width: 100%; width: 100%; padding: 30px;}
+	.popup-order__title{width: 100%;}
+	.banner__title h2, .popup-order__title h2{width: 100%;}
+	.popup-order__personal{flex-direction: column;align-items: center;}
+	.popup-order__personal-text{width: 215px; padding-bottom: 100px;}
+	.popup-order__personal-text:after{transform: rotate(-90deg); top: auto; bottom: 30px; left: 0;}
+	.popup-order__personal-items{width: 80%;}
+	.popup-order__form-input{width: 100%; margin: 15px 0px;}
+	.calculator__form-input, .popup-order__form-input, .calculator__form-select{width: 100%;}
+	.calculator__managers .popup-order__personal-text{text-align: center;width: 100%;}
+	.calculator__managers .popup-order__personal-text p{width: 100%;}
+	.calculator__managers{padding: 0px;}
+	.popup-order__personal-text:after{bottom: 3px; right: 23px !important;}
+	.header__want-order{justify-content: center;}
 }
 
 
@@ -141,6 +162,23 @@
 	.how-we-work__mobile-item{margin-bottom: 50px;}
 	.how-we-work__mobile-item .how-we-work__item{margin-bottom: 4px;}
 	.our-works__title h2, .reviews__title h2, .tarifs__title h2{font-size: 20px;}
+	.calculator{padding: 15px 10px;}
+	.banner{
+		padding: 30px 0px;
+	}
+	.banner__icon{width: 100%;}
+	.calculator__form-submit .header__want-order{width: 100%;}
+	.popup-order__personal-items{width: 100%;}
+	.popup-order__personal-items{flex-direction: column;}
+	.popup-order__personal-item{margin-bottom: 30px;}
+	.popup-order{padding: 15px;}
+	.popup-order__submit a{width: 100%; padding-left: 15px;padding-right: 15px;}
+	.checbox-custom{text-align: center;}
+	.popup-order__personal{margin-bottom: 2px;}
+	.popup-order__personal-text:after{bottom: 36px;}
+	.step1 .popup-order__personal-text:after{bottom: 3px;}
+	.header__want-order{justify-content: space-between;}
+	.vide-about-us{min-height: 450px;}
 }
 
 @media only screen and (max-width : 360px) {

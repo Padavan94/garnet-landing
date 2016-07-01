@@ -7,7 +7,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/main.css">
-
 </head>
 
 <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -172,23 +171,23 @@
 	<div class="container">
 		<div class="header__container">
 			<div class="header__logo">
-				<a href="#"><img src="/img/logo.svg" alt="logo"></a>
+				<a href="/"><img src="/img/logo.svg" alt="logo"></a>
 			</div>
 			<div class="header__want-order">
 				<p>Хотите, мы<br /><span>перезвоним Вам?</span></p>
-				<a href="#">Да, хочу!<span class="icon-arrow"></span></a>
+				<a class="open-form" href="#order-popup">Да, хочу!<span class="icon-arrow"></span></a>
 			</div>
 			<div class="header__phones">
 				<span class="icon-phone"></span>
 				<div class="header__phones-wrap">
 					<a href="tel:0800750013" class="header__phones__link"><span>0 (800)</span> 75 00 13</a>
-					<a href="#" class="header__phones__link"><span>(048)</span> 703 22 89</a>
-					<a href="#" class="header__phones__link"><span>(098)</span> 577 77 47</a>
+					<a href="tel:0487032289" class="header__phones__link"><span>(048)</span> 703 22 89</a>
+					<a href="tel:0985777747" class="header__phones__link"><span>(098)</span> 577 77 47</a>
 				</div>
 			</div>
 			<div class="header__info">
-				<a href="#" class="header__mail"><span class="icon-mail"></span>office@garnet-software.com</a>
-				<a href="#" class="header__location"><span class="icon-location"></span>г. Одесса / г. Киев</a>
+				<a href="mailto:office@garnet-software.com" class="header__mail"><span class="icon-mail"></span>office@garnet-software.com</a>
+				<a href="#contacts" rel='m_PageScroll2id' class="header__location"><span class="icon-location"></span>г. Одесса / г. Киев</a>
 			</div>
 		</div>
 	</div>
@@ -197,8 +196,7 @@
 <div class="banner" id="home">
 	<div class="container">
 		<div class="banner__title">
-			<h2>Хотите узнать цену разработки</h2>
-			<h2>Вашего сайта?</h2>
+			<h2>Закажите сайт и получите в подарок:</h2>
 		</div>
 		<div class="banner__container">
 			<div class="banner__icons">
@@ -211,31 +209,125 @@
 				<div class="banner__icon ic3">
 					<p><span>15 рекомендаций</span><br> для продвижения Вашего бизнеса в интернете</p>
 				</div>
-				<div class="our-garanties__buttons banner__buttons">
-					<a href="#" class="our-garanties__button our-garanties__button--red"><span class="icon-airplane"></span>подать заявку</a>
-				</div>
-			</div>
-			<div class="calculator">
-				<div class="calculator__subtitle">
-					<h3>Рассчитайте стоимость сайта <span>за 2 шага</span><span>бесплатно</span></h3>
-				</div>
-				<div class="calculator__steps">
-					<a href="#" class="calculator__step">Шаг 1</a>
-					<a href="#" class="calculator__step">Шаг 1</a>
-				</div>
-				<div class="calculator__form"></div>
 			</div>
 		</div>
-		
+		<div class="our-garanties__buttons banner__buttons">
+			<a href="#order-popup" class="our-garanties__button open-form our-garanties__button--red surprise"></span>получить подарок</a>
+		</div>
 	</div>
 
 </div>
+<div class="calculator" id="calculator">
+	<div class="container">
+		<div class="calculator__subtitle">
+			<h3>Рассчитайте стоимость сайта <span class="blue">за 2 шага</span><span class="red"> бесплатно</span></h3>
+		</div>
+		<div class="calculator__steps">
+			<a href="#" class="calculator__step active-my" data-target-my="step1">Шаг 1</a>
+			<a href="#" class="calculator__step" data-target-my="step2">Шаг 2</a>
+		</div>
+		<div class="calculator__form-wrap">
+			<form action="" id="my-calculator" class="calculator__form">
+				<!-- step1 -->
+				<div class="step1 active-my stepp">
+					<div class="calculator__form-input ic1">
+						<input type="text" placeholder="Ваше имя" name="name">
+					</div>
+					<div class="calculator__form-input ic2">
+						<input type="text" placeholder="Ваш телефон" name="phone">
+					</div>
+					<div class="calculator__form-select">
+						<select name="site_type" id="">
+							<option value="1">Выберите тип сайта</option>
+							<option value="Визитка">Визитка</option>
+							<option value="Магазин">Магазин</option>
+							<option value="Портал">Портал</option>
+							<option value="Посадочная страница">Посадочная страница</option>
+							<option value="Индивидуальное решение">Индивидуальное решение</option>
+						</select>
+					</div>
+					<div class="popup-order__personal calculator__managers">
+						<div class="popup-order__personal-text">
+							<p>
+								<span class="bold">Выберите</span> вашего<br>
+								<span class="bold">персонального</span><br>
+								<span class="green">менеджера:</span>
+							</p>
+						</div>
+						<div class="popup-order__personal-items">
+							<div class="popup-order__personal-item m1">
+								<div class="checbox-custom">
+									<input type="radio" value="Валерия" name="group2" id="lera2" checked="">
+									<label for="lera2">Валерия</label>
+								</div>
+							</div>
+							<div class="popup-order__personal-item m2">
+								<div class="checbox-custom">
+									<input type="radio" value="Константин" name="group2" id="kostya2">
+									<label for="kostya2">Константин</label>
+								</div>
+							</div>
+							<div class="popup-order__personal-item m3">
+								<div class="checbox-custom">
+									<input type="radio" value="Юлия" name="group2" id="julia2">
+									<label for="julia2">Юлия</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="calculator__form-submit">
+						<div class="header__want-order next-step">
+							<a href="#" data-target-my="step2">следующий шаг<span class="icon-arrow"></span></a>
+						</div>
+					</div>
+				</div>
 
+				<!-- step2 -->
+				<div class="step2 stepp">
+					<div class="calculator__form-select">
+						<select name="design_type" id="">
+							<option value="1">Выберите тип дизайна</option>
+							<option value="Простой">Простой</option>
+							<option value="Шаблонный">Шаблонный</option>
+							<option value="Уникальный">Уникальный</option>
+						</select>
+					</div>
+					<div>
+						<div class="upper">Выберите тип продвижения:</div>
+						<div class="calculator__form-radio">
+							<div class="radio-my">
+								<input type="checkbox" name="promotion22" id="seo" value="Сео" checked>
+								<label for="seo">SEO</label>
+							</div>
+							<div class="radio-my">
+								<input type="checkbox" name="promotion33" id="contex" value="Контекстная реклама">
+								<label for="contex">Контекстная реклама</label>
+							</div>
+						</div>
+					</div>
+					<div class="calculator__form-input">
+						<textarea name="message" id="" placeholder="Комментарий"></textarea>
+					</div>
+					
+					<div class="calculator__form-submit">
+						<div class="header__want-order send-form">
+							<a href="#">Отправить<span class="icon-arrow"></span></a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 
 <div class="navigation">
 	<div class="navigation__inner">
 		<a href="#home" rel="m_PageScroll2id" class="navigation__dot active">
 			<svg class="icon icon-home anim1"><use xlink:href="#icon-home"></use></svg>
+		</a>
+		<div class="span"></div>
+		<a href="#calculator" rel="m_PageScroll2id" class="navigation__dot">
+			<svg class="icon icon-calc anim1"><use xlink:href="#icon-calc"></use></svg>
 		</a>
 		<div class="span"></div>
 		<a href="#who-work" rel="m_PageScroll2id" class="navigation__dot">
@@ -271,189 +363,76 @@
 		</a>
 	</div>
 </div>
-<!-- <div class="sepor"></div> -->
 
-<!-- <div class="calculator" id="calc">
-	<div class="container">
-		<div class="calculator__title ">
-			<h2>Калькулятор стоимости сайта</h2>
+
+<!-- <div class="popup-order mfp-hide" id="order-popup">
+	<h4>Введите ваши данные:</h4>
+	<form id="order-form" action="" class="popup-order__form">
+		<div class="popup-order__form-input ic1">
+			<input type="text" placeholder="Имя" name="name">
+		</div>
+		<div class="popup-order__form-input ic3">
+			<input type="text" placeholder="Телефон" name="phone">
+		</div>
+		<div class="">
+			<div class="our-garanties__buttons banner__buttons">
+				<a href="#" class="our-garanties__button our-garanties__button--red order-popup-send"></span>Рассчитать стоимость</a>
+			</div>
+		</div>
+	</form>
+</div> -->
+
+<form id="order-popup" action="" class="popup-order mfp-hide">
+	<div class="popup-order__title">
+		<h2>Цена разработки</h2>
+		<h2>Вашего сайта готова!</h2>
+	</div>
+	<div class="popup-order__personal">
+		<div class="popup-order__personal-text">
+			<span class="t1">Выберите</span>
+			<span class="t2">Вашего</span>
+			<span class="t3">персонального</span>
+			<span class="t4">менеджера</span>
+		</div>
+		<div class="popup-order__personal-items">
+			<div class="popup-order__personal-item m1">
+				<h4>Валерия</h4>
+				<div class="checbox-custom">
+					<input type="radio" value="Валерия" name="group1w" id="lera" checked>
+					<label for="lera"></label>
+				</div>
+			</div>
+			<div class="popup-order__personal-item m2">
+				<h4>Константин</h4>
+				<div class="checbox-custom">
+					<input type="radio" value="Константин" name="group1w" id="kostya">
+					<label for="kostya"></label>
+				</div>
+			</div>
+			<div class="popup-order__personal-item m3">
+				<h4>Юлия</h4>
+				<div class="checbox-custom">
+					<input type="radio" value="Юлия" name="group1w" id="julia">
+					<label for="julia"></label>
+				</div>
+			</div>
 		</div>
 	</div>
-		<div class="calculator__slider">
-			<form id = "form-step1" class="calculator__slider__slide1 item">
-				<div class="container">
-					<div class="calculator__slider__slide1__title">
-						Рассчитать стоимость сайта <span class = "black">за 2 минуты <span class = "pad">бесплатно!</span></span>
-					</div>
-					<div class="calculator__slider__slide1__content">
-						<div class = "calculator__slider__slide1__content__step-text">Шаг <span>1</span></div>
-						<div class="calculator__slider__slide1__content__title">Выберите тип сайта:</div>
-						<div class="calculator__slider__slide1__content__inputs">
-
-						<div class="calculator__slider__slide1__content__inputs__input-wrap name">
-							<input type = "text" placeholder = "Имя">
-						</div>
-						<div class="calculator__slider__slide1__content__inputs__input-wrap phone">
-							<input type = "text" placeholder = "Телефон">
-						</div>
-						</div>
-
-						<div class="calculator__slider__slide1__content__chbxs">
-						<div class="calculator__slider__slide1__content__chbxs__chbx-wrap ic1">
-							
-							<div class="calculator__slider__slide1__content__chbxs__chbx-wrap__rad-outter">
-							<input type="radio" id = "r1" name = "nono"> <label for = "r1" >Сайт визитка</label>
-							</div>
-							<div class="calculator__slider__slide1__content__chbxs__chbx-wrap__text">
-							
-							<span class = "descr">(Для личного<br>использования)</span>
-						</div>
-						</div>
-						<div class="calculator__slider__slide1__content__chbxs__chbx-wrap ic2">
-							<div class="calculator__slider__slide1__content__chbxs__chbx-wrap__rad-outter">
-							<input type="radio" name= "nono" id = "r2" > <label for = "r2">Корпоративный сайт</label>
-							</div>
-
-							<div class="calculator__slider__slide1__content__chbxs__chbx-wrap__text">
-						
-							<span class = "descr">(Решение для предприятий)</span>
-							</div>
-						</div>
-						<div class="calculator__slider__slide1__content__chbxs__chbx-wrap ic3">
-							<div class="calculator__slider__slide1__content__chbxs__chbx-wrap__rad-outter">
-							<input type="radio" name = "nono" id = "r3"><label for = "r3">Интернет-магазин</label>
-							</div>
-							<div class="calculator__slider__slide1__content__chbxs__chbx-wrap__text">
-							<span class = "descr">(Продажи в интернете)</span>
-							</div>
-						</div>
-						<div class="calculator__slider__slide1__content__chbxs__chbx-wrap ic4">
-							<div class="calculator__slider__slide1__content__chbxs__chbx-wrap__rad-outter">
-							<input type="radio" name = "nono" id = "r4"> <label for = "r4">Посадочная страница</label>
-							</div>
-							<div class="calculator__slider__slide1__content__chbxs__chbx-wrap__text">
-							
-							<span class = "descr">(Идеально для бизнеса)</span>
-								</div>
-						</div>
-						</div>
-						<span>*Пожалуйста, заполните все поля</span>
-						<div class="calculator__slider__slide1__content__submit-wrap"><input type = "button"class = "slide1but" value = "Следующий шаг"></div>
-
-					</div>
-				</div>
-				</form>
-
-
-				<form action = "" id = "form-step2" class="calculator__slider__slide2 item">
-				<div class="container">
-				
-					<div class="calculator__slider__slide2__content">
-						<div class = "calculator__slider__slide2__content__step-text">Шаг <span>2</span></div>
-						<div class="calculator__slider__slide2__content__title">Выберите тип дизайна:</div>
-				
-
-
-						<div class="calculator__slider__slide2__content__chbxs">
-						<div class="calculator__slider__slide2__content__chbxs__chbx-wrap ic1">
-							
-							<div class="calculator__slider__slide2__content__chbxs__chbx-wrap__rad-outter">
-							<input type="radio" id = "r5" name = "second"> <label for = "r5" >Шаблонный</label>
-							</div>
-							<div class="calculator__slider__slide2__content__chbxs__chbx-wrap__text">
-							
-							<span class = "descr">Не подразумевает индивидуальную структуру
-							или изменение графических составляющих.Подбираем <span class = "black">несколько шаблонов</span> и делаем сайт
-							максимально соответствующим Вашим целям.</span>
-							<span class = "sub-descr blue">Быстро и недорого</span>
-						</div>
-						</div>
-						<div class="calculator__slider__slide2__content__chbxs__chbx-wrap ic2">
-							<div class="calculator__slider__slide2__content__chbxs__chbx-wrap__rad-outter">
-							<input type="radio" name= "second" id = "r6"> <label for = "r6">Простой</label>
-							</div>
-
-							<div class="calculator__slider__slide2__content__chbxs__chbx-wrap__text">
-						
-							<span class = "descr">Знаете, на кого из конкурентов
-							хотите быть похожи? <span class = "black">Подключаем</span> к
-							процессу разработки <span class = "black">дизайнера</span> и
-							видоизменяем выбранный шаблон
-							согласно Вашим пожеланиям.</span>
-							<span class = "sub-descr green">Оптимальное соотношение
-							цена-качество</span>
-
-							</div>
-						</div>
-						<div class="calculator__slider__slide2__content__chbxs__chbx-wrap ic3">
-							<div class="calculator__slider__slide2__content__chbxs__chbx-wrap__rad-outter">
-							<input type="radio" name = "second" id = "r7"><label for = "r7">Индвидуальный</label>
-							</div>
-							<div class="calculator__slider__slide2__content__chbxs__chbx-wrap__text">
-							<span class = "descr">Подходит тем, кто ценит внешнюю
-							составляющую сайта. Дизайн
-							разрабатывается под <span class = "black">индивидуальные
-							 пожелания заказчика.</span> В стоимость также
-							входит <span class = "black">разработка логотипа.</span></span>
-								<span class = "sub-descr vasil">Уникальный внешний вид</span>
-							</div>
-						</div>
-				
-						</div>
-						
-						<div class="calculator__slider__slide2__content__submit-wrap"><input type = "button"value = "Следующий шаг"></div>
-
-					</div>
-				</div>
-				</form>
-
-
-					<form action = "" id = "form-step3" class="calculator__slider__slide3 item">
-				<div class="container">
-				
-					<div class="calculator__slider__slide3__content">
-						<div class = "calculator__slider__slide3__content__step-text">Шаг <span>3</span></div>
-						<div class="calculator__slider__slide3__content__title">Выберите тип продвижения:</div>
-				
-
-
-						<div class="calculator__slider__slide3__content__chbxs">
-						<div class="calculator__slider__slide3__content__chbxs__chbx-wrap ic8">
-							
-							<div class="calculator__slider__slide3__content__chbxs__chbx-wrap__rad-outter">
-							<input type="checkbox" id = "r8" name = "third"> <label for = "r8" >SEO продвижение</label>
-							</div>
-							<div class="calculator__slider__slide3__content__chbxs__chbx-wrap__text">
-							
-							<span class = "descr">Хотите увидеть свой сайт на первых позициях поисковых систем
-по релевантным запросам? К примеру, попасть в ТОП 1 по запросу“мебель на заказ” или “купить ручку в Киеве”?SEO - именно тот способ продвижения, который позволит
-вашему сайту выбиться на первые позиции и колоссально
-увеличить приходящий на сайт трафик</span>
-						
-						</div>
-						</div>
-						<div class="calculator__slider__slide3__content__chbxs__chbx-wrap ic9">
-							<div class="calculator__slider__slide3__content__chbxs__chbx-wrap__rad-outter">
-							<input type="checkbox" name= "third" id = "r9"> <label for = "r9">Контекстная реклама</label>
-							</div>
-
-							<div class="calculator__slider__slide3__content__chbxs__chbx-wrap__text">
-						
-							<span class = "descr">Не всегда успеваете справляться с заказами? Контекстная реклама позволяет контролировать поток клиентов и всегда иметь возможность “подкрутить” количество входящих заказов в нужную сторону с помощью изменения рекламного бюджета. В отличии от SEO, работает мгновенно.</span>
-
-							</div>
-						</div>
-	
-				
-						</div>
-						
-						<div class="calculator__slider__slide3__content__submit-wrap"><input type = "button" value = "Готово"></div>
-
-					</div>
-				</div>
-			</form>
+	<div class="popup-order__form">
+		<div class="popup-order__form-input ic1">
+			<input type="text" placeholder="Введите Ваше имя" name="name">
 		</div>
-	</div> -->
+		<div class="popup-order__form-input ic3">
+			<input type="text" placeholder="Номер телефона" name="phone">
+		</div>
+		<div class="popup-order__submit">
+			<div class="our-garanties__buttons banner__buttons">
+				<a href="#" class="our-garanties__button our-garanties__button--red order-popup-send"></span>Узнать цену!</a>
+				<p><span>Ваши данные</span> не будут опубликованы<br>или переданы третьим лицам.</p>
+			</div>
+		</div>
+	</div>
+</form>
 
 <section class="who-work" id="who-work">
 	<div class="who-work__title">
@@ -554,7 +533,7 @@
 				<div class="logo">
 					<img src="/img/logo2.svg" alt="logo">
 				</div>
-				<a href="#">Подать заявку</a>
+				<a href="#order-popup" class="open-form">Подать заявку</a>
 			</div>
 			<!-- item end -->
 
@@ -761,66 +740,66 @@
 		<div class="tarifs__container">
 			<div class="tarifs__item tarifs__item--red">
 				<div class="tarifs__item-info">
-					<h3 class="tarifs__item-title">Сайт<br>визитка</h3>
-					<p>Для личного пользования</p>
+					<h3 class="tarifs__item-title">Посадочная<br> страница</h3>
+					<p>Максимальный отклик</p>
 					<ul>
+						<li>Погружение в бизнес </li>
+						<li>Адаптивная версия</li>
+						<li>Продающая структура</li>
 						<li>Уникальный дизайн</li>
-						<li>Удобный интерфейс</li>
-						<li>Оптимальная цена</li>
-						<li>Фотогралерея</li>
-						<li>Ситема управления</li>
-						<li>Оптимальные цены</li>
+						<li>Высокая конверсия </li>
+						<li>Интергация в CRM + 1C</li>
 					</ul>
 				</div>
-				<a href="#" class="tarifs__item-button"><span class="icon-dollar"></span>узнать цену</a>
+				<a href="#order-popup" class="tarifs__item-button open-form"><span class="icon-dollar"></span>узнать цену</a>
 			</div>
 
 			<div class="tarifs__item tarifs__item--green">
 				<div class="tarifs__item-info">
-					<h3 class="tarifs__item-title">посадочная<br>страница</h3>
-					<p>Для личного пользования</p>
+					<h3 class="tarifs__item-title">портал</h3>
+					<p>Для предприятий</p>
 					<ul>
+						<li>Погружение в бизнес </li>
 						<li>Уникальный дизайн</li>
-						<li>Удобный интерфейс</li>
-						<li>Оптимальная цена</li>
-						<li>Фотогралерея</li>
-						<li>Ситема управления</li>
-						<li>Оптимальные цены</li>
+						<li>Адаптивная версия </li>
+						<li>Современное юзабилити </li>
+						<li>Продвижение сайта: </li>
+						<li>- SEO + контекстная реклама</li>
 					</ul>
 				</div>
-				<a href="#" class="tarifs__item-button"><span class="icon-dollar"></span>узнать цену</a>
+				<a href="#order-popup" class="tarifs__item-button open-form"><span class="icon-dollar"></span>узнать цену</a>
 			</div>
 
 			<div class="tarifs__item tarifs__item--yellow">
 				<div class="tarifs__item-info">
-					<h3 class="tarifs__item-title">посадочная<br>страница</h3>
-					<p>Для личного пользования</p>
+					<h3 class="tarifs__item-title">Интернет<br> магазин</h3>
+					<p>Продажи в интернете</p>
 					<ul>
 						<li>Уникальный дизайн</li>
-						<li>Удобный интерфейс</li>
-						<li>Оптимальная цена</li>
-						<li>Фотогралерея</li>
-						<li>Ситема управления</li>
-						<li>Оптимальные цены</li>
+						<li>Адаптивная версия </li>
+						<li>Сортировка товаров(фильтры)</li>
+						<li>Интеграция с CRM и 1C </li>
+						<li>Продвижение сайта:</li>
+						<li>- SEO + контекстная реклама</li>
 					</ul>
 				</div>
-				<a href="#" class="tarifs__item-button"><span class="icon-dollar"></span>узнать цену</a>
+				<a href="#order-popup" class="tarifs__item-button open-form"><span class="icon-dollar"></span>узнать цену</a>
 			</div>
 
 			<div class="tarifs__item tarifs__item--blue">
 				<div class="tarifs__item-info">
-					<h3 class="tarifs__item-title">посадочная<br>страница</h3>
-					<p>Для личного пользования</p>
+					<h3 class="tarifs__item-title">Индивидуальное<br> решение</h3>
+					<p>Бизнес "под ключ"</p>
 					<ul>
-						<li>Уникальный дизайн</li>
-						<li>Удобный интерфейс</li>
-						<li>Оптимальная цена</li>
-						<li>Фотогралерея</li>
-						<li>Ситема управления</li>
-						<li>Оптимальные цены</li>
+						<li>Выявление целей</li>
+						<li>Погружение в бизнес</li>
+						<li>Маркетинговое исследование</li>
+						<li>Agile разработка</li>
+						<li>Комплексный маркетинг</li>
+						<li>Настройка отдела продаж</li>
 					</ul>
 				</div>
-				<a href="#" class="tarifs__item-button"><span class="icon-dollar"></span>узнать цену</a>
+				<a href="#order-popup" class="tarifs__item-button open-form"><span class="icon-dollar"></span>узнать цену</a>
 			</div>
 
 		</div>
@@ -882,42 +861,42 @@
 						<h6>Сбор информации</h6>
 						<p>Составление ТЗ.</p>
 					</div>
-					<img src="img/room1.svg" alt="room">
+					<img src="/img/room1.svg" alt="room">
 				</div>
 				<div class="how-we-work__mobile-item">
 					<div class="how-we-work__item prepayment">
 						<h6>предоплата</h6>
 						<p>Проектирование и<br> прототипирование.</p>
 					</div>
-					<img src="img/room2.svg" alt="room">
+					<img src="/img/room2.svg" alt="room">
 				</div>
 				<div class="how-we-work__mobile-item">
 					<div class="how-we-work__item design">
 						<h6>дизайн</h6>
 						<p>Утверждение<br>дизайна.</p>
 					</div>
-					<img src="img/room3.svg" alt="room">
+					<img src="/img/room3.svg" alt="room">
 				</div>
 				<div class="how-we-work__mobile-item">
 					<div class="how-we-work__item htmlcss">
 						<h6>Вёрстка</h6>
 						<p>Программирование</p>
 					</div>
-					<img src="img/room4.svg" alt="room">
+					<img src="/img/room4.svg" alt="room">
 				</div>
 				<div class="how-we-work__mobile-item">
 					<div class="how-we-work__item testing">
 						<h6>тестирование</h6>
 						<p>Заполнение<br> контентом. Запуск.</p>
 					</div>
-					<img src="img/room5.svg" alt="room">
+					<img src="/img/room5.svg" alt="room">
 				</div>
 				<div class="how-we-work__mobile-item">
 					<div class="how-we-work__item giveCust">
 						<h6>передача заказчику</h6>
 						<p>Контроль качества.</p>
 					</div>
-					<img src="img/room6.svg" alt="room">
+					<img src="/img/room6.svg" alt="room">
 				</div>
 			</div>
 		</div>
@@ -943,23 +922,19 @@
 				</div>
 				<div class="reviews__slider-item swiper-slide">
 					<div class="reviews__img">
-						<img src="/img/main.png" alt="man">
+						<img src="/img/man2.jpg" alt="man">
 					</div>
-					<div class="reviews__name">Демьян Важинский</div>
-					<div class="reviews__company">Компания Favorite Group</div>
-					<p class="reviews__message">За создание сайта хотим выразить благодарность компании Garnet Software.
-					Требовалось для презентации сделать сайт посвященный нашей
-					компании. Задача была решена быстро и качественно.</p>
+					<div class="reviews__name">Евгений</div>
+					<div class="reviews__company">Компания Delta Technology</div>
+					<p class="reviews__message">Благодарим компанию Garnet Software за оперативную разработку сайта-каталога нашей продукции. Рекомендуем к сотрудничеству.</p>
 				</div>
 				<div class="reviews__slider-item swiper-slide">
 					<div class="reviews__img">
-						<img src="/img/main.png" alt="man">
+						<img src="/img/man3.jpg" alt="man">
 					</div>
-					<div class="reviews__name">Демьян Важинский</div>
-					<div class="reviews__company">Компания Favorite Group</div>
-					<p class="reviews__message">За создание сайта хотим выразить благодарность компании Garnet Software.
-					Требовалось для презентации сделать сайт посвященный нашей
-					компании. Задача была решена быстро и качественно.</p>
+					<div class="reviews__name">Элина</div>
+					<div class="reviews__company">Компания Biomed Angio</div>
+					<p class="reviews__message">Хочу выразить огромную благодарность компании garnet-software за создание медицинского сайта с хирургическим направлением. Приятно было сотрудничать! Рекомендую всем!</p>
 				</div>
 				
 			</div>
@@ -1005,8 +980,8 @@
 				</div>
 			</div>
 			<div class="our-garanties__buttons">
-				<a href="#" class="our-garanties__button our-garanties__button--red"><span class="icon-airplane"></span>подать заявку</a>
-				<a href="#" class="our-garanties__button our-garanties__button--blue"><span class="icon-calculate"></span>узнать цену</a>
+				<a href="#order-popup" class="open-form our-garanties__button our-garanties__button--red"><span class="icon-airplane"></span>подать заявку</a>
+				<a href="#order-popup" class="open-form our-garanties__button our-garanties__button--blue"><span class="icon-calculate"></span>узнать цену</a>
 			</div>
 		</div>
 	</div>
@@ -1031,7 +1006,7 @@
 	</div>
 	<div class="maps__map-wrap">
 	<div class="maps__name maps__name--bottom">
-		<span>г. Одесса</span>, Малая Арнаутская 64
+		<span>г. Киев</span>, Ахтырский переулок 3
 	</div>
 	<div class="maps__map" id="map-odessa"></div>
 </section>
@@ -1053,11 +1028,12 @@
 					<span class="icon-phone"></span>
 					<div class="header__phones-wrap">
 						<a href="tel:0800750013" class="header__phones__link"><span>0 (800)</span> 75 00 13</a>
-						<a href="#" class="header__phones__link"><span>(048)</span> 703 22 89</a>
-						<a href="#" class="header__phones__link"><span>(098)</span> 577 77 47</a>
+						<a href="tel:0487032289" class="header__phones__link"><span>(048)</span> 703 22 89</a>
+						<a href="tel:0985777747" class="header__phones__link"><span>(098)</span> 577 77 47</a>
 					</div>
 				</div>
-				<a href="#" class="footer__phones-mail"><span class="icon-mail"></span>office@garnet-software.com</a>
+				<a href="mailto:office@garnet-software.com" class="footer__phones-mail">
+				<span class="icon-mail"></span>office@garnet-software.com</a>
 			</div>
 		</div>
 	</div>
@@ -1065,7 +1041,68 @@
 
 
 
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjElT_8ZdLtMPfj2sQQ-t44dyH1dDjFqc&callback=initMap"></script>
+
 	<script src="/js/main.js"></script>
+
+        <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NSLTHN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NSLTHN');</script>
+<!-- End Google Tag Manager -->
+<?php if (substr($_SERVER['REQUEST_URI'], 4 ,9) == "thank-you") { ?>
+
+<!-- Google Code for &#1054;&#1090;&#1087;&#1088;&#1072;&#1074;&#1080;&#1083;&#1080; &#1079;&#1072;&#1103;&#1074;&#1082;&#1091; (new) Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 959737822;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "KGwTCLSGx2QQ3t_RyQM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/959737822/?label=KGwTCLSGx2QQ3t_RyQM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<?php } ?>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter30582817 = new Ya.Metrika({id:30582817,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/30582817" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+        
+
 	</body>
 </html>
