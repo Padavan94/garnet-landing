@@ -66,6 +66,17 @@ function setCounter(){
 $(document).ready(function() {
 
 
+
+//gallery
+
+$('.who-work').find('a.who-work__item-img').magnificPopup({
+  type: 'inline',
+  gallery:{
+    enabled:true
+  },
+
+});
+
 //phone mask
 
 $("input[name='phone']").mask('0000000000000000000');
@@ -76,10 +87,20 @@ $("input[name='phone']").mask('0000000000000000000');
 
 $('.open-form').magnificPopup({
   type:'inline',
-  midClick: true 
+  midClick: true,
+  callbacks: {
+    open: function() {
+      var magnificPopup = $.magnificPopup.instance;
+      var target = magnificPopup.st.el.attr("title");
+      console.log(target);
+      magnificPopup.content.find("input[name='whereClick']").val(target);
+      console.log(magnificPopup.content.find("input[name='whereClick']").val());
+    }
+  }
 });
 
 $(".order-popup-send").click(function(event) {
+  event.preventDefault();
   var location = window.location.pathname;
   $("#order-popup").append("<input type='hidden' name='location' value='"+location+"'>");
   if($("#order-popup input[name='phone']").val() !== ""){
@@ -160,12 +181,15 @@ $(".calculator__steps .calculator__step[data-target-my='step1']").click(function
 
 $(".next-step a, .calculator__step[data-target-my='step2']").click(function(event) {
   event.preventDefault();
+  $("a[href='#calculator']").click();
+
 
   if($(".calculator__form-input input[name='name']").val() !== "" && $(".calculator__form-input input[name='phone']").val() !== ""){
     $(".stepp, .calculator__step").removeClass('active-my');
     var target = $(this).attr("data-target-my");
     $(".stepp."+target).addClass('active-my');
     $(".calculator__step[data-target-my='step2']").addClass('active-my');
+    event.preventDefault();
   } else {
     $(".calculator__form-input input").each(function(i){
       var self = $(this);
@@ -218,9 +242,9 @@ var whoWork = $(".our-garanties").offset().top;
     $("section.how-we-work").addClass("animate");
     $(".how-we-work__item").addClass("animate");
   }
-  if(sepor >= whoWork) {
+  /*if(sepor >= whoWork) {
     $(".our-garanties__icons").addClass("animate");
-  }
+  }*/
   if(sepor >= whoWork) {
     setCounter();
   }
@@ -243,12 +267,46 @@ forSVG();
 
 var mySwiper = new Swiper('.swiper-container', {
     speed: 400,
-    slidesPerView: 1,
+    slidesPerView: 3,
     loop: true,
+    centeredSlides: true,
     pagination: '.swiper-pagination',
-    paginationClickable: true
-
+    paginationClickable: true,
+    autoplay: 5000,
+    nextButton: ".swiper-slide-next",
+    prevButton: ".swiper-slide-prev",
+    breakpoints: {
+      // when window width is <= 320px
+      768: {
+        slidesPerView: 1,
+        autoplay: 2000,
+      },
+      // when window width is <= 640px
+      1920: {
+        slidesPerView: 3,
+      }
+    }
 });
+
+
+$(document).on("click", ".swiper-slide-next", function(event){
+  event.preventDefault();
+  console.log("asdasdasd");
+  mySwiper.slideNext(true,400);
+})
+
+
+$(document).on("click", ".swiper-slide-prev", function(event){
+  event.preventDefault();
+  console.log("asdasdasd");
+  mySwiper.slidePrev(true,400);
+})
+
+
+
+
+
+
 
 var owl2items = $(".owl-init");
 var owl3items = $(".owl-init2");

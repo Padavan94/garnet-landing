@@ -234,7 +234,7 @@ a{
 				top: 50%;
 				margin-top: -10px;
 				left: 21px;
-				background-image: url("/img/input-icons.png");
+				background-image: url("/content-landing/img/input-icons.png");
 				background-repeat: no-repeat;
 
 			}
@@ -248,7 +248,7 @@ a{
 				top: 50%;
 				margin-top: -10px;
 				left: 21px;
-				background-image: url("/img/input-icons.png");
+				background-image: url("/content-landing/img/input-icons.png");
 				background-repeat: no-repeat;
 				background-position: center -19px;
 			}
@@ -264,7 +264,7 @@ a{
 				left: 21px;
 				background-repeat: no-repeat;
 				background-position: center -19px;
-				background-image: url("/img/phone-icon.png");
+				background-image: url("/content-landing/img/phone-icon.png");
 			}
 		}
 	}
@@ -282,6 +282,7 @@ a{
 			right: 21px;
 			top: 50%;
 			margin-top: -6px;
+			pointer-events: none;
 
 		}
 		select{
@@ -294,6 +295,7 @@ a{
 			font-family: "Museo-700";
 			font-size: 16px;
 			appearance: none;
+			cursor: pointer;
 		}
 	}
 	&__form-submit{
@@ -327,7 +329,7 @@ a{
 				opacity: 0;
 				pointer-events: none;
 				&:checked + label:before {
-					background-image: url("/img/check2.png");
+					background-image: url("/content-landing/img/check2.png");
 					background-position: center;
 					background-repeat: no-repeat;
 				}
@@ -503,8 +505,38 @@ a{
 }
 
 
+.mfp-content .info{
+	max-width: 760px;
+	margin: 0px auto;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	position: relative;
+	.img{
+		margin-right: 25px;
+	}
+	.descr{
+		h4{
+			font-family: "Museo-900";
+			font-size: 16px;
+			text-transform: uppercase;
+
+		}
+		p{
+
+		}
+
+	}
+	.mfp-close{
+		color: #fff;
+		font-size: 60px;
+		bottom: 100%;
+		left: 100%;
+	}
+}
+
 .banner {
-	background-image: url("/img/main.jpg");
+	background-image: url("/content-landing/img/main.jpg");
 	background-position: center top;
 	background-size: cover;
 	text-align: center;
@@ -518,7 +550,7 @@ a{
 		.surprise{
 			background-color: #24b7d2;
 			border-bottom-color: #41d7f2;
-			background-image: url("/img/surprise.png");
+			background-image: url("/content-landing/img/surprise.png");
 			background-repeat: no-repeat;
 			background-position: left 37px center;
 			display: inline-block;
@@ -592,7 +624,7 @@ a{
 			content: "";
 			width: 126px;
 			height: 127px;
-			background-image: url("/img/icons-banner.png");
+			background-image: url("/content-landing/img/icons-banner.png");
 			background-repeat: no-repeat;
 			position: absolute;
 			top: 0;
@@ -644,7 +676,7 @@ a{
 				height: auto;
 			}
 		}
-		a{
+		a.order{
 			font-size: 17px;
 			text-transform: uppercase;
 			color: #fff;
@@ -662,7 +694,7 @@ a{
 				width: 22px;
 				height: 23px;
 				content: "";
-				background-image: url("/img/arrow2.png");
+				background-image: url("/content-landing/img/arrow2.png");
 				position: absolute;
 				left: 52px;
 				top: 50%;
@@ -680,7 +712,7 @@ a{
 			padding-left: 0;
 		}
 		&:before{
-			background-image: url("/img/some-icons.png");
+			background-image: url("/content-landing/img/some-icons.png");
 			position: absolute;
 			content: "";
 		}
@@ -738,7 +770,7 @@ a{
 				position: absolute;
 				left: 77%;
 				top: -20px;
-				background-image: url("/img/punktir.png");
+				background-image: url("/content-landing/img/punktir.png");
 			}
 		}
 	}
@@ -757,12 +789,19 @@ a{
 	}
 	&__item-img{
 		margin-bottom: 20px;
+		display: block;
+		padding-top: 5px;
 		span{
 			width: 87px;
 			height: 87px;
 			display: block;
-			background-image: url("/img/guys.png");
+			background-image: url("/content-landing/img/guys.png");
 			background-repeat: no-repeat;
+			border-radius: 50%;
+			border: 0px dashed #4dddf8;
+			transition: all .3s ease;
+			position: relative;
+			top: 0px;
 			&.sasha{
 				background-position: center 0;
 			}
@@ -814,7 +853,12 @@ a{
 			&.tanya{
 				background-position: center -1392px;
 			}
+			&:hover{
+				position: relative;
+				top: -5px;
+			}
 		}
+		
 	}
 	.counter{
 		text-align: center;
@@ -834,7 +878,7 @@ a{
 			left: 8px;
 			top: 50%;
 			margin-top: -25px;
-			background-image: url("/img/some-icons.png");
+			background-image: url("/content-landing/img/some-icons.png");
 			background-repeat: no-repeat;
 			background-position: left -981px;
 		}
@@ -956,6 +1000,7 @@ a{
 			transform: scale(1);
 			width: 100%;
 			height: auto;
+			max-height: 506px;
 		}
 	}
 }
@@ -967,7 +1012,7 @@ a{
 	z-index: 0;
 	&:after{
 		content: "";
-		background-image: url("/img/pattern.png");
+		background-image: url("/content-landing/img/pattern.png");
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -1026,7 +1071,7 @@ a{
 			left: 50%;
 			top: -40px;
 			margin-left: -40px;
-			background-image: url("/img/icons.png");
+			background-image: url("/content-landing/img/icons.png");
 		}
 		&--red{
 			&:before{
@@ -1145,7 +1190,7 @@ a{
 		}
 		ul{
 			background-color: #fff;
-			font-family: "Roboto-Thin";
+			font-family: "Museo-300";
 			font-size: 16px;
 			color: #3a3a3a;
 			list-style-type: none;
@@ -1165,7 +1210,7 @@ a{
 					top: 50%;
 					width: 17px;
 					height: 13px;
-					background-image: url("/img/check.png");
+					background-image: url("/content-landing/img/check.png");
 					background-repeat: no-repeat;
 					margin-top: -6px;
 					position: absolute;
@@ -1196,7 +1241,7 @@ a{
 
 .vide-about-us{
 	min-height: 710px;
-	background-image: url("/img/video-bg.jpg");
+	background-image: url("/content-landing/img/video-bg.jpg");
 	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1232,7 +1277,7 @@ a{
 			content: "";
 			width: 131px;
 			height: 141px;
-			background-image: url("/img/youtube.png");
+			background-image: url("/content-landing/img/youtube.png");
 			background-position: center;
 			background-repeat: no-repeat;
 			position: absolute;
@@ -1254,7 +1299,7 @@ a{
 		padding-left: 100px;
 		margin-top: 22px;
 		background-position: left 37px center;
-		background-image: url("/img/camera.png");
+		background-image: url("/content-landing/img/camera.png");
 		background-repeat: no-repeat;
 
 		&:before{
@@ -1283,7 +1328,7 @@ a{
 
 .our-garanties{
 	background: linear-gradient(to top,#cad2d2 10%,#fcfefe 90%);
-	background-image: url("/img/town.jpg");
+	background-image: url("/content-landing/img/town.jpg");
 	background-position: center bottom -11px;
 	background-repeat: no-repeat;
 	position: relative;
@@ -1574,7 +1619,7 @@ a{
 				position: absolute;
 				right: calc(100% + 19px);
 				top: 0;
-				background-image: url("/img/some-icons2.png");
+				background-image: url("/content-landing/img/some-icons2.png");
 				background-repeat: no-repeat;
 			}
 		}
@@ -1591,7 +1636,7 @@ a{
 				position: absolute;
 				left: calc(100% + 19px);
 				top: 0;
-				background-image: url("/img/some-icons2.png");
+				background-image: url("/content-landing/img/some-icons2.png");
 				background-position: left -69px;
 				background-repeat: no-repeat;
 			}
@@ -1609,7 +1654,7 @@ a{
 				position: absolute;
 				left: 0;
 				top: -79px;
-				background-image: url("/img/some-icons2.png");
+				background-image: url("/content-landing/img/some-icons2.png");
 				background-position: left -229px;
 				background-repeat: no-repeat;
 			}
@@ -1628,7 +1673,7 @@ a{
 				right: calc(100% + 19px);
 				top: 0;
 				background-position: left -149px;
-				background-image: url("/img/some-icons2.png");
+				background-image: url("/content-landing/img/some-icons2.png");
 				background-repeat: no-repeat;
 			}
 		}
@@ -1647,7 +1692,7 @@ a{
 				right: calc(100% + 19px);
 				top: 0;
 				background-position: left -309px;
-				background-image: url("/img/some-icons2.png");
+				background-image: url("/content-landing/img/some-icons2.png");
 				background-repeat: no-repeat;
 			}
 		}
@@ -1665,7 +1710,7 @@ a{
 				right: calc(100% + 19px);
 				top: 0;
 				background-position: left -392px;
-				background-image: url("/img/some-icons2.png");
+				background-image: url("/content-landing/img/some-icons2.png");
 				background-repeat: no-repeat;
 			}
 		}
@@ -1693,7 +1738,7 @@ a{
 				top: 50%;
 				margin-top: -31px;
 				content: "";
-				background-image: url("/img/some-icons3.png");
+				background-image: url("/content-landing/img/some-icons3.png");
 				background-position: center top;
 			}
 			&.getInfo:before{
@@ -1720,7 +1765,7 @@ a{
 
 .reviews{
 	text-align: center;
-	background-image: url("/img/hands.jpg");
+	background-image: url("/content-landing/img/hands.jpg");
 	position: relative;
 	z-index: 0;
 	min-height: 892px;
@@ -1728,7 +1773,7 @@ a{
 	padding: 144px 0;
 	&:after{
 		content: "";
-		background-image: url("/img/pattern.png");
+		background-image: url("/content-landing/img/pattern.png");
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -1788,7 +1833,7 @@ a{
 		}
 	}
 	&__message{
-		width: 700px;
+		width: auto;
 		margin: 0px auto;
 	}
 	.swiper-pagination{
@@ -1798,10 +1843,11 @@ a{
 	.swiper-pagination-bullet{
 		width: 25px;
 		height: 25px;
-		background-color: #525252;
+		background-color: #fff;
 	}
 	.swiper-pagination-bullet-active{
 		background-color: #8c8c8c;
+		border: 1px solid #41d7f2;
 	}
 }
 
@@ -1813,7 +1859,7 @@ a{
 	z-index: 9999;
 	&:after{
 		content: "";
-		background-image: url("/img/pattern.png");
+		background-image: url("/content-landing/img/pattern.png");
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -2001,7 +2047,7 @@ a{
 			left: 21px;
 			background-repeat: no-repeat;
 			background-position: center center;
-			background-image: url("/img/phone-icon.png");
+			background-image: url("/content-landing/img/phone-icon.png");
 			}
 		}
 	}
@@ -2026,7 +2072,7 @@ a{
 			left: 50%;
 			margin-left: -43.5px;
 			top: 0;
-			background-image: url("/img/managers.png");
+			background-image: url("/content-landing/img/managers.png");
 			background-repeat: no-repeat;
 			position: absolute;
 		}
@@ -2113,7 +2159,7 @@ a{
 			content: " ";
 			width: 29px;
 			height: 29px;
-			border: 1px solid #dbdbdb;
+			border: 2px solid #b5b5b5;
 			border-radius: 5px;
 			left: 0;
 			top: 50%;
@@ -2128,7 +2174,7 @@ a{
 		opacity: 0;
 		pointer-events: none;
 		&:checked + label:before{
-			background-image: url(/img/check2.png);
+			background-image: url(/content-landing/img/check2.png);
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: 60%;
@@ -2149,6 +2195,27 @@ a{
 
 .mfp-auto-cursor .mfp-content{
 	padding-top: 140px;
+}
+
+
+.swiper-wrapper{
+	padding: 30px 0px;
+}
+.swiper-slide{
+	transition: all .4s ease;
+	position: relative;
+	opacity: .3;
+	filter: grayscale(100%);
+
+}
+.swiper-slide-active{
+	opacity: 1;
+	filter: grayscale(0%);
+}
+
+.swiper-slide-next,
+.swiper-slide-prev{
+	cursor: pointer;
 }
 
 

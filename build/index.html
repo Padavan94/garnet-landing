@@ -175,7 +175,7 @@
 			</div>
 			<div class="header__want-order">
 				<p>Хотите, мы<br /><span>перезвоним Вам?</span></p>
-				<a class="open-form" href="#order-popup">Да, хочу!<span class="icon-arrow"></span></a>
+				<a title="Кнопка: Да, хочу!" class="open-form" href="#order-popup">Да, хочу!<span class="icon-arrow"></span></a>
 			</div>
 			<div class="header__phones">
 				<span class="icon-phone"></span>
@@ -212,7 +212,7 @@
 			</div>
 		</div>
 		<div class="our-garanties__buttons banner__buttons">
-			<a href="#order-popup" class="our-garanties__button open-form our-garanties__button--red surprise"></span>получить подарок</a>
+			<a title="Кнопка: Получить подарок" href="#order-popup" class="our-garanties__button open-form our-garanties__button--red surprise"></span>получить подарок</a>
 		</div>
 	</div>
 
@@ -398,6 +398,7 @@
 			<div class="popup-order__personal-item m1">
 				<h4>Валерия</h4>
 				<div class="checbox-custom">
+					<input type="text" name="whereClick" value="123123" hidden>
 					<input type="radio" value="Валерия" name="group1w" id="lera" checked>
 					<label for="lera"></label>
 				</div>
@@ -444,21 +445,38 @@
 			<div class="who-work__item marketers">
 				<div class="who-work__item-photos">
 					<div class="owl-init">
-						<div class="who-work__item-img">
-							<span class="sasha"></span>
-						</div>
-						<div class="who-work__item-img">
-							<span class="stas"></span>
-						</div>
+						<a href="#info-alex" class="who-work__item-img">
+							<span class="sasha">
+								<div class="info mfp-hide" id="info-alex">
+									<div class="img">
+										<img src="img/icon5.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Александр</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam qui, asperiores. Ullam eius voluptatum nemo culpa saepe. Quasi doloribus iste eveniet facere esse voluptates sunt in totam doloremque voluptate. Provident!</p>
+									</div>
+								</div>
+							</span>
+						</a>
+						<a href="#info-stas" class="who-work__item-img" >
+							<span class="stas">
+								<div class="info mfp-hide" id="info-stas">
+									<div class="img">
+										<img src="img/icon6.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Станислав</h4>
+										<p>Я SEO-специалист. Я не хочу ничего делать. Я хочу пиццу, купить пиццу, заказать пиццу на дом, заказ пиццы, пицца.</p>
+									</div>
+								</div>
+							</span>
+						</a>
 
 					</div>
 				</div>
 				<div class="who-work__item-descr">
 					<h5>marketers</h5>
-					<p>Душа озарена неземной
-					радостью, как эти чудесные
-					весенние утра, которыми я
-					наслаждаюсь</p>
+					<p>Делают Ваш сайт популярным в поисковых системах, приносят прибыль Вашему бизнесу и заставляют сайт продавать</p>
 				</div>
 			</div>
 			<!-- item end -->
@@ -466,17 +484,24 @@
 			<div class="who-work__item seo">
 				<div class="who-work__item-photos ">
 					<div class="owl-init">
-						<div class="who-work__item-img">
-							<span class="kostya"></span>
-						</div>
+						<a href="#info-kostya" class="who-work__item-img" >
+							<span class="kostya">
+								<div class="info mfp-hide" id="info-kostya">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Константин</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam qui, asperiores. Ullam eius voluptatum nemo culpa saepe. Quasi doloribus iste eveniet facere esse voluptates sunt in totam doloremque voluptate. Provident!</p>
+									</div>
+								</div>
+							</span>
+						</a>
 					</div>
 				</div>
 				<div class="who-work__item-descr">
 					<h5>СEO</h5>
-					<p>Душа озарена неземной
-					радостью, как эти чудесные
-					весенние утра, которыми я
-					наслаждаюсь</p>
+					<p>Вдохновляет нашу большую команду и руководит деятельностью коллектива</p>
 				</div>
 			</div>
 			<!-- item end -->
@@ -485,20 +510,37 @@
 			<div class="who-work__item account">
 				<div class="who-work__item-photos ">
 					<div class="owl-init">
-						<div class="who-work__item-img">
-							<span class="lera"></span>
-						</div>
-						<div class="who-work__item-img">
-							<span class="julia"></span>
-						</div>
+						<a href="#info-lera" class="who-work__item-img">
+							<span class="lera">
+								<div class="info mfp-hide" id="info-lera">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Валерия</h4>
+										<p>Меня зовут Лера, я Account Manager. Люблю читать и путешествовать, в свободное от работы время приседаю со штангой.</p>
+									</div>
+								</div>
+							</span>
+						</a>
+						<a href="#info-julia" class="who-work__item-img">
+							<span class="julia">
+								<div class="info mfp-hide" id="info-julia">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Юлия</h4>
+										<p>Меня зовут Юля, у меня забрали паспорт и держат меня здесь насильно, поэтому купите у меня сайт или позвоните в полицию!</p>
+									</div>
+								</div>
+							</span>
+						</a>
 					</div>
 				</div>
 				<div class="who-work__item-descr">
 					<h5>Account managers</h5>
-					<p>Душа озарена неземной
-					радостью, как эти чудесные
-					весенние утра, которыми я
-					наслаждаюсь</p>
+					<p>Помогают подобрать самое эффективное решение для Вашей задачи</p>
 				</div>
 			</div>
 			<!-- item end -->
@@ -507,24 +549,54 @@
 			<div class="who-work__item project">
 				<div class="who-work__item-photos">
 					<div class="owl-init">
-						<div class="who-work__item-img">
-							<span class="evgen"></span>
-						</div>
-						<div class="who-work__item-img">
-							<span class="tanya"></span>
-						</div>
-						<div class="who-work__item-img">
-							<span class="slava"></span>
-						</div>
+						<a href="#info-evgen" class="who-work__item-img">
+							<span class="evgen">
+								<div class="info mfp-hide" id="info-evgen">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Евгений</h4>
+										<h6>Project manager</h6>
+										<p>Гибок, как Agile. Стремителен, как спринт. Всегда готов выслушать и поддержать, если это включено в бюджет.</p>
+									</div>
+								</div>
+							</span>
+						</a>
+						<a href="#info-tanya" class="who-work__item-img">
+							<span class="tanya">
+								<div class="info mfp-hide" id="info-tanya">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Татьяна</h4>
+										<h6>Project manager</h6>
+										<p>Засыпаю и просыпаюсь с мыслями о ваших проектах. Проверяю рабочую почту 24/7. Люблю кофе с молоком, scrum и котиков.</p>
+									</div>
+								</div>
+							</span>
+						</a>
+						<a href="#info-slava" class="who-work__item-img">
+							<span class="slava">
+								<div class="info mfp-hide" id="info-slava">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Вячеслав</h4>
+										<h6>Project manager</h6>
+										<p>Дорога возникает под шагами идущего</p>
+									</div>
+								</div>
+							</span>
+						</a>
 
 					</div>
 				</div>
 				<div class="who-work__item-descr">
 					<h5>project managers</h5>
-					<p>Душа озарена неземной
-					радостью, как эти чудесные
-					весенние утра, которыми я
-					наслаждаюсь</p>
+					<p>Заботятся чтобы проект был сдан в срок и поддерживают с Вами связь 24 часа в сутки, 7 дней в неделю</p>
 				</div>
 			</div>
 			<!-- item end -->
@@ -533,7 +605,7 @@
 				<div class="logo">
 					<img src="/img/logo2.svg" alt="logo">
 				</div>
-				<a href="#order-popup" class="open-form">Подать заявку</a>
+				<a title="Кнопка: подать заявку" class="order open-form" href="#order-popup">Подать заявку</a>
 			</div>
 			<!-- item end -->
 
@@ -541,20 +613,39 @@
 			<div class="who-work__item design">
 				<div class="who-work__item-photos ">
 					<div class="owl-init">
-						<div class="who-work__item-img">
-							<span class="karina"></span>
-						</div>
-						<div class="who-work__item-img">
-							<span class="alena"></span>
-						</div>
+						<a href="#info-karina" class="who-work__item-img">
+							<span class="karina">
+								<div class="info mfp-hide" id="info-karina">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Карина</h4>
+										<h6>Дизайнер</h6>
+										Характер — мягкий. Темперамент — холерик. <br>Агрессивна с нерешительными людьми, уклоняющимися от смелого действия.</p>
+									</div>
+								</div>
+							</span>
+						</a>
+						<a href="#info-alena" class="who-work__item-img">
+							<span class="alena">
+								<div class="info mfp-hide" id="info-alena">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Алена</h4>
+										<h6>Дизайнер</h6>
+										<p>Я дизайнер и я не знал, что любовь может быть жестокой, а сердце таким одиноким</p>
+									</div>
+								</div>
+							</span>
+						</a>
 					</div>
 				</div>
 				<div class="who-work__item-descr">
 					<h5>designers</h5>
-					<p>Душа озарена неземной
-					радостью, как эти чудесные
-					весенние утра, которыми я
-					наслаждаюсь</p>
+					<p>Делают Ваш сайт визуально приятным для посетителя и создают уникальное решение для его интерфейса</p>
 				</div>
 			</div>
 			<!-- item end -->
@@ -563,37 +654,119 @@
 			<div class="who-work__item web">
 				<div class="who-work__item-descr">
 					<h5>Web developers</h5>
-					<p>Душа озарена неземной
-					радостью, как эти чудесные
-					весенние утра, которыми я
-					наслаждаюсь</p>
+					<p>Преобразуют Ваши идеи в отличный результат!</p>
 				</div>
 			</div>
 			<!-- item end -->
 
 			<div class="who-work__item who-work__item--big">
 				<div class="owl-init2">
-						<div class="who-work__item-img">
-							<span class="sergey1"></span>
-						</div>
-						<div class="who-work__item-img">
-							<span class="sergey2"></span>
-						</div>
-						<div class="who-work__item-img">
-							<span class="sergey3"></span>
-						</div>
-						<div class="who-work__item-img">
-							<span class="vadim"></span>
-						</div>
-						<div class="who-work__item-img">
-							<span class="ira"></span>
-						</div>
-						<div class="who-work__item-img">
-							<span class="igor"></span>
-						</div>
-						<div class="who-work__item-img">
-							<span class="anya"></span>
-						</div>
+						<a href="#info-sergey1" class="who-work__item-img">
+							<span class="sergey1">
+								<div class="info mfp-hide" id="info-sergey1">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Сергей</h4>
+										<h6>Web developer</h6>
+										<p>Отличник боевой и политической подготовки; 
+										Среди сослуживцев пользуется заслуженным авторитетом;
+										Военную и государственную тайну хранить умеет;
+										Морально устойчив;</p>
+									</div>
+								</div>
+							</span>
+						</a>
+						<a href="#info-sergey2" class="who-work__item-img">
+							<span class="sergey2">
+								<div class="info mfp-hide" id="info-sergey2">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Сергей</h4>
+										<h6>Web developer</h6>
+										<p>Отличник боевой и политической подготовки; 
+										Среди сослуживцев пользуется заслуженным авторитетом;
+										Военную и государственную тайну хранить умеет;
+										Морально устойчив;</p>
+									</div>
+								</div>
+							</span>
+						</a>
+						<a href="#info-sergey3" class="who-work__item-img">
+							<span class="sergey3">
+								<div class="info mfp-hide" id="info-sergey3">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Сергей</h4>
+										<h6>Front-end developer</h6>
+										<p>Меня зовут Сергей, я ненавижу людей.
+										Люблю первые 90% проекта, ненавижу вторые 90% проекта.
+										Однажды я порабощу этот никчемный мир и истреблю всех жалких людишек. Оставлю только тех, кто будет ухаживать за котиками. Нельзя допустить, чтобы эти маленькие комочки счастья вымерли!</p>
+									</div>
+								</div>
+							</span>
+						</a>
+						<a href="#info-vadim" class="who-work__item-img">
+							<span class="vadim">
+								<div class="info mfp-hide" id="info-vadim">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Вадим</h4>
+										<h6>Front-end developer</h6>
+										<p>Вспышка молнии. Ночь пронзила раскатом Новый интерфейс.</p>
+									</div>
+								</div>
+							</span>
+						</a>
+						<a href="#info-ira" class="who-work__item-img">
+							<span class="ira">
+								<div class="info mfp-hide" id="info-ira">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Ира</h4>
+										<h6>Web-developer</h6>
+										<p>Я web-developer. И я слишком скромна, чтобы много о себе писать.</p>
+									</div>
+								</div>
+							</span>
+						</a>
+						<a href="#info-igor" class="who-work__item-img">
+							<span class="igor">
+								<div class="info mfp-hide" id="info-igor">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Игорь</h4>
+										<h6>PHP developer</h6>
+										<p>Я php программист. Я профессионально разрабатываю код на php. Я делаю это с душой.</p>
+									</div>
+								</div>
+							</span>
+						</a>
+						<a href="#info-anya" class="who-work__item-img">
+							<span class="anya">
+								<div class="info mfp-hide" id="info-anya">
+									<div class="img">
+										<img src="img/icon7.png" alt="qweqwe">
+									</div>
+									<div class="descr">
+										<h4>Аня</h4>
+										<h6>Full-stack web-developer</h6>
+										<p>Я программист, а не гуманитарий. поэтому красиво описать себя парой предложений для меня непосильная ноша. А вот код - это другое дело, это я могу!</p>
+									</div>
+								</div>
+							</span>
+						</a>
 
 					</div>
 			</div>
@@ -613,29 +786,29 @@
 				<img src="/img/mokup1.jpg" alt="mokup">
 			</div>
 			<div class="our-works__item-info">
-				<h4>Рекламная компания 78</h4>
+				<h4>Николаев Пром Сталь Конструкция</h4>
 				<p>Разработка сайта</p>
-				<a href="#" class="our-works__show">перейти на сайт</a>
+				<a href="http://npsk.com.ua/" class="our-works__show">перейти на сайт</a>
 			</div>
 		</div>
-		<div class="our-works__item">
-			<div class="our-works__item-img">
-				<img src="/img/mokup2.jpg" alt="mokup">
-			</div>
-			<div class="our-works__item-info">
-				<h4>Рекламная компания 78</h4>
-				<p>Разработка сайта</p>
-				<a href="#" class="our-works__show">перейти на сайт</a>
-			</div>
-		</div>
+<!-- 		<div class="our-works__item">
+	<div class="our-works__item-img">
+		<img src="/img/mokup2.jpg" alt="mokup">
+	</div>
+	<div class="our-works__item-info">
+		<h4>Рекламная компания 78</h4>
+		<p>Разработка сайта</p>
+		<a href="#" class="our-works__show">перейти на сайт</a>
+	</div>
+</div> -->
 		<div class="our-works__item">
 			<div class="our-works__item-img">
 				<img src="/img/mokup3.jpg" alt="mokup">
 			</div>
 			<div class="our-works__item-info">
-				<h4>Рекламная компания 78</h4>
+				<h4>Folk Fashion</h4>
 				<p>Разработка сайта</p>
-				<a href="#" class="our-works__show">перейти на сайт</a>
+				<a href="http://folkfashion.com.ua/" class="our-works__show">перейти на сайт</a>
 			</div>
 		</div>
 		<div class="our-works__item">
@@ -643,12 +816,12 @@
 				<img src="/img/mokup4.jpg" alt="mokup">
 			</div>
 			<div class="our-works__item-info">
-				<h4>Рекламная компания 78</h4>
+				<h4>Garnet Building</h4>
 				<p>Разработка сайта</p>
-				<a href="#" class="our-works__show">перейти на сайт</a>
+				<a href="http://garnetbuild.com/lp1/" class="our-works__show">перейти на сайт</a>
 			</div>
 		</div>
-		<div class="our-works__item">
+		<!-- <div class="our-works__item">
 			<div class="our-works__item-img">
 				<img src="/img/mokup5.jpg" alt="mokup">
 			</div>
@@ -657,15 +830,15 @@
 				<p>Разработка сайта</p>
 				<a href="#" class="our-works__show">перейти на сайт</a>
 			</div>
-		</div>
+		</div> -->
 		<div class="our-works__item">
 			<div class="our-works__item-img">
 				<img src="/img/mokup6.jpg" alt="mokup">
 			</div>
 			<div class="our-works__item-info">
-				<h4>Рекламная компания 78</h4>
+				<h4>Insafe</h4>
 				<p>Разработка сайта</p>
-				<a href="#" class="our-works__show">перейти на сайт</a>
+				<a href="http://insafe.com.ua/" class="our-works__show">перейти на сайт</a>
 			</div>
 		</div>
 		<div class="our-works__item">
@@ -673,9 +846,9 @@
 				<img src="/img/mokup7.jpg" alt="mokup">
 			</div>
 			<div class="our-works__item-info">
-				<h4>Рекламная компания 78</h4>
+				<h4>Copy Center</h4>
 				<p>Разработка сайта</p>
-				<a href="#" class="our-works__show">перейти на сайт</a>
+				<a href="http://copycentr.org/" class="our-works__show">перейти на сайт</a>
 			</div>
 		</div>
 		<div class="our-works__item">
@@ -683,12 +856,12 @@
 				<img src="/img/mokup8.jpg" alt="mokup">
 			</div>
 			<div class="our-works__item-info">
-				<h4>Рекламная компания 78</h4>
+				<h4>Kriger</h4>
 				<p>Разработка сайта</p>
-				<a href="#" class="our-works__show">перейти на сайт</a>
+				<a href="http://krigerboilers.com/" class="our-works__show">перейти на сайт</a>
 			</div>
 		</div>
-		<div class="our-works__item">
+		<!-- <div class="our-works__item">
 			<div class="our-works__item-img">
 				<img src="/img/mokup9.jpg" alt="mokup">
 			</div>
@@ -697,15 +870,15 @@
 				<p>Разработка сайта</p>
 				<a href="#" class="our-works__show">перейти на сайт</a>
 			</div>
-		</div>
+		</div> -->
 		<div class="our-works__item">
 			<div class="our-works__item-img">
 				<img src="/img/mokup10.jpg" alt="mokup">
 			</div>
 			<div class="our-works__item-info">
-				<h4>Рекламная компания 78</h4>
+				<h4>Alfapress</h4>
 				<p>Разработка сайта</p>
-				<a href="#" class="our-works__show">перейти на сайт</a>
+				<a href="http://alfapress.com.ua/" class="our-works__show">перейти на сайт</a>
 			</div>
 		</div>
 		<div class="our-works__item">
@@ -713,12 +886,12 @@
 				<img src="/img/mokup11.jpg" alt="mokup">
 			</div>
 			<div class="our-works__item-info">
-				<h4>Рекламная компания 78</h4>
+				<h4>LAB Consulting</h4>
 				<p>Разработка сайта</p>
-				<a href="#" class="our-works__show">перейти на сайт</a>
+				<a href="http://lab-consult.com" class="our-works__show">перейти на сайт</a>
 			</div>
 		</div>
-		<div class="our-works__item">
+		<!-- <div class="our-works__item">
 			<div class="our-works__item-img">
 				<img src="/img/mokup12.jpg" alt="mokup">
 			</div>
@@ -727,7 +900,7 @@
 				<p>Разработка сайта</p>
 				<a href="#" class="our-works__show">перейти на сайт</a>
 			</div>
-		</div>
+		</div> -->
 
 	</div>
 </section>
@@ -751,7 +924,7 @@
 						<li>Интергация в CRM + 1C</li>
 					</ul>
 				</div>
-				<a href="#order-popup" class="tarifs__item-button open-form"><span class="icon-dollar"></span>узнать цену</a>
+				<a title="Узнать цену(Посадочная)" href="#order-popup" class="tarifs__item-button open-form"><span class="icon-dollar"></span>узнать цену</a>
 			</div>
 
 			<div class="tarifs__item tarifs__item--green">

@@ -170,7 +170,7 @@ gulp.task('style:build', function () {
             sourceMap: false,
             errLogToConsole: true
         }))
-        .pipe(prefixer({ browsers: ['last 4 versions'] }))
+        .pipe(prefixer({ browsers: ['last 6 versions'] }))
         .pipe(cssmin({keepSpecialComments : 0}))
         /*.pipe(sourcemaps.write())*/
         .pipe(gulp.dest(path.build.css))

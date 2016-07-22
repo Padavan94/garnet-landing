@@ -5,7 +5,7 @@ echo $_POST['phone'];
 
 
 		$from = $_POST['mail'];
-		$to .= "padavan94@gmail.com, hakigama@gmail.com, webmarketingua@gmail.com";
+		$to .= "padavan94@gmail.com, webmarketingua@gmail.com, since.ua@gmail.com, osipov.km@gmail.com,webserfing4you@gmail.com,webmarketingua@gmail.com,lhcmyul@gmail.com, valeriia.prokopchuk@gmail.com, gamilton83@yandex.ru, statsishin93@mail.ru";
 		$subject = "garnet-soft - lp";
 		$message = '
                 <html>
@@ -32,6 +32,10 @@ echo $_POST['phone'];
 									<td style="width: 100px;">Страница, с котой пришла заявка:</td>
 									<td>'.$_POST['location'].'</td>
 								</tr>
+								<tr>
+									<td style="width: 100px;">Елемент, который привлек внимание</td>
+									<td>'.$_POST['whereClick'].'</td>
+								</tr>
 								
 							</tbody>
 						</table>                  
@@ -39,7 +43,7 @@ echo $_POST['phone'];
                 </html>'; //Текст нащего сообщения можно использовать HTML теги;
 		
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
-		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+		$headers .= 'Content-type: text/html;charset=UTF-8' . "\r\n";
 		$headers .= "From:" . $from;
 		mail($to,$subject,$message, $headers);
 	
